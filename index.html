@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ocha Dashboards</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="dashboard-wrapper">
+      <div id="dashboard">        
+          <ul class="app-left dashboard">
+            <li><a href="#funding" class="current">Funding</a></li>
+            <li><a href="#drought">Drought</a></li>
+            <li><a href="#conflict">Conflict</a></li>
+            <li><a href="#health">Health</a></li>
+          </ul><!--End navbar-->
+
+          <div class="app-right">
+            <div id="funding">
+              <div class="funding-left">
+                <div id="regionalfunding" class="fundingtab">
+                  <div class="funding-title">RegionalFunding</div>
+                  <div class="funding-summary">
+                    <p>Latest Funding Status</p>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">12 Countries</div>
+                  </div>
+                  <div class="cluster-summary"></div>
+                </div>
+                <div id="southsudanfunding" class="fundingtab" style="display:none;">
+                  <div class="funding-title">South Sudan Funding</div>
+                  <div class="funding-summary">
+                    <p>Latest Funding Status</p>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                  </div>
+                  <div class="cluster-funding">Cluster Funding</div>
+                </div>
+                <div id="kenyafunding" class="fundingtab" style="display:none;">
+                  <div class="funding-title">Kenya Funding</div>
+                  <div class="funding-summary">
+                    <p>Latest Funding Status</p>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                  </div>
+                  <div class="cluster-funding">Cluster Funding</div>
+                </div>
+                <div id="ethiopiafunding" class="fundingtab" style="display:none;">
+                  <div class="funding-title">Ethiopia Funding</div>
+                  <div class="funding-summary">
+                    <p>Latest Funding Status</p>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                  </div>
+                  <div class="cluster-funding">Cluster Funding</div>
+                </div>
+                <div id="somaliafunding" class="fundingtab" style="display:none;">
+                  <div class="funding-title">Somalia Funding</div>
+                  <div class="funding-summary">
+                    <p>Latest Funding Status</p>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                    <div class="funding-block">2.4billion</div>
+                  </div>
+                  <div class="cluster-funding">Cluster Funding</div>
+                </div>
+                <div id="eritreafunding" class="fundingtab" style="display:none;">
+                  <div class="funding-title">Eritrea Funding</div>
+                  <div class="funding-summary">Latest Funding Status</div>
+                  <div class="cluster-funding">Cluster Funding</div>
+                </div>
+              </div>
+              <div class="funding-right sidebar">
+                <select name='numbers' id='numbers' class="form-control">
+                  <option value='regionalfunding' selected='selected'>Regional</option>
+                  <option value='southsudanfunding'>South Sudan</option>
+                  <option value='kenyafunding'>Kenya</option>
+                  <option value='ethiopiafunding'>Ethiopia</option>
+                  <option value='somaliafunding'>Somalia</option>
+                  <option value='eritreafunding'>Eritrea</option>
+                </select> 
+              </div>              
+            </div><!--End Funding-->
+
+          </div>
+             
+             <ul id="conflict">
+                    <li><a href="http://css-tricks.com/video-screencasts/58-html-css-the-very-basics/">The VERY Basics of HTML &amp; CSS</a></li>
+                    <li><a href="http://css-tricks.com/the-difference-between-id-and-class/">Classes and IDs</a></li>
+                    <li><a href="http://css-tricks.com/the-css-box-model/">The CSS Box Model</a></li>
+                    <li><a href="http://css-tricks.com/all-about-floats/">All About Floats</a></li>
+                    <li><a href="http://css-tricks.com/the-css-overflow-property/">CSS Overflow Property</a></li>
+              <li><a href="http://css-tricks.com/css-font-size/">CSS Font Size - (px - em - % - pt - keyword)</a></li>
+              <li><a href="http://css-tricks.com/css-transparency-settings-for-all-broswers/">CSS Transparency / Opacity</a></li>
+              <li><a href="http://css-tricks.com/css-sprites/">CSS Sprites</a></li>
+              <li><a href="http://css-tricks.com/nine-techniques-for-css-image-replacement/">CSS Image Replacement</a></li>
+              <li><a href="http://css-tricks.com/what-is-vertical-align/">CSS Vertial Align</a></li>
+              <li><a href="http://css-tricks.com/the-css-overflow-property/">The CSS Overflow Property</a></li>
+             </ul>
+             
+             <ul id="drought">
+                <li><a href="http://css-tricks.com/anythingslider-jquery-plugin/">Anything Slider jQuery Plugin</a></li>
+                <li><a href="http://css-tricks.com/moving-boxes/">Moving Boxes</a></li>
+              <li><a href="http://css-tricks.com/simple-jquery-dropdowns/">Simple jQuery Dropdowns</a></li>
+              <li><a href="http://css-tricks.com/creating-a-slick-auto-playing-featured-content-slider/">Featured Content Slider</a></li>
+              <li><a href="http://css-tricks.com/startstop-slider/">Start/Stop Slider</a></li>
+              <li><a href="http://css-tricks.com/banner-code-displayer-thing/">Banner Code Displayer Thing</a></li>
+              <li><a href="http://css-tricks.com/highlight-certain-number-of-characters/">Highlight Certain Number of Characters</a></li>
+              <li><a href="http://css-tricks.com/auto-moving-parallax-background/">Auto-Moving Parallax Background</a></li>
+             </ul>
+             
+             <ul id="health">
+                    <li><a href="http://css-tricks.com/css-wishlist/">Top Designers CSS Wishlist</a></li>
+                    <li><a href="http://css-tricks.com/what-beautiful-html-code-looks-like/">What Beautiful HTML Code Looks Like</a></li>
+                    <li><a href="http://css-tricks.com/easily-password-protect-a-website-or-subdirectory/">Easily Password Protect a Website or Subdirectory</a></li>
+                    <li><a href="http://css-tricks.com/how-to-create-an-ie-only-stylesheet/">IE-Only Stylesheets</a></li>
+                    <li><a href="http://css-tricks.com/ecommerce-considerations/">eCommerce Considerations</a></li>
+                    <li><a href="http://css-tricks.com/php-for-beginners-building-your-first-simple-cms/">PHP: Build Your First CMS</a></li>
+             </ul>
+             
+           </div>
+        </div>
+        
+    </div>
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/vendor/d3.v3.min.js"></script>
+        <script src="js/vendor/crossfilter.min.js"></script>
+        <script src="js/vendor/dc.min.js"></script>
+        <script src="js/vendor/highcharts.js"></script>
+        <script src="js/vendor/organictabs.jquery.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
