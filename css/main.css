@@ -14,7 +14,7 @@ ul.dashboard{list-style-type: none;}
 /*Funding*/
 .funding-left{width: 80%;float: left;height: 100%;}
 #funding {height: 100%;width: 100%;}
-.funding-summary{min-height: 300px;}
+.funding-summary{min-height: 300px;margin: 0;}
 .funding-title{height: 40px;}
 
 
