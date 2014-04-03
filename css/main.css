@@ -8,14 +8,15 @@ ul.dashboard{list-style-type: none;}
 .app-left {float: left;width: 20%;height: 100%;padding: 0;display: block;background:#3c62e6;position: fixed;left: 0; }
 .app-left li {height: 40px;}
 .app-left li a{display: block;height: 40px;text-decoration: none;color: white;}
-.app-left li a.active{display: block;height: 40px;text-decoration: none;background: white;color: #3c62e6;}
-.app-right{float: right;padding: 0;width: 80%;height: 100%;position: relative;}
+.app-left li a.active{display: block;height: 40px;text-decoration: none;background: #f5f4f3;color: #3c62e6;}
+.app-right{float: right;padding: 0;width: 80%;height: 100%;position: relative;background: #f5f4f3;}
 .sidebar{float: right;width: 20%;}
 /*Funding*/
 .funding-left{width: 80%;float: left;height: 100%;}
 #funding {height: 100%;width: 100%;}
 .funding-summary{min-height: 300px;margin: 0;}
 .funding-title{height: 40px;text-transform: uppercase;font-size: 2em;}
+.funding-block{background: #ffffff;height: 300px;border-radius: 3px;}
 
 
 
