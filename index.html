@@ -21,6 +21,8 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/dc.css">
+        <link rel="stylesheet" href="css/colorbrewer.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -40,15 +42,31 @@
           <div class="app-right">
             <div id="funding">
               <div class="funding-left">
+                <div class="funding-right sidebar">
+                      <select name='numbers' id='numbers' class="form-control">
+                        <option value='regionalfunding' selected='selected'>Regional</option>
+                        <option value='southsudanfunding'>South Sudan</option>
+                        <option value='kenyafunding'>Kenya</option>
+                        <option value='ethiopiafunding'>Ethiopia</option>
+                        <option value='somaliafunding'>Somalia</option>
+                        <option value='eritreafunding'>Eritrea</option>
+                        <option value='ugandafunding'>Uganda</option>
+                        <option value='burundifunding'>Burundi</option>
+                        <option value='djiboutifunding'>Djibouti</option>
+                        <option value='sudanfunding'>Sudan</option>
+                      </select> 
+                    </div>
                 <div id="regionalfunding" class="fundingtab">
-                  <div class="funding-title">Regional Funding</div>
+                  <div class="funding-title">
+                    Regional Funding
+                  </div>
                   
                   <div class="funding-summary row">
                     <p>Latest Funding Status</p>
                     <div class="col-md-4">
                       <div class="funding-block">
-                        13.4billion
-                        Requested in 2014
+                        <p class="requested-sum"><i class="fa fa-usd"></i>13.4 billion</p>
+                        <p>Requested in 2014</p>
                       </div><!--Requested Funding-->
                     </div>
                     <div class="col-md-4">
@@ -64,6 +82,85 @@
                       </div>
                     </div>
                   </div><!--Funding summary-->
+
+                  <div class="row">
+                    <div id="yearly-bubble-chart" class="dc-chart">
+                      <strong>Yearly Performance</strong> (radius: fluctuation/index ratio, color: gain/loss)
+                      <a class="reset" href="javascript:yearlyBubbleChart.filterAll();dc.redrawAll();"
+                      style="display: none;">reset</a>
+
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div id="gain-loss-chart">
+                      <strong>Days by Gain/Loss</strong>
+                      <a class="reset" href="javascript:gainOrLossChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div id="quarter-chart">
+                      <strong>Quarters</strong>
+                      <a class="reset" href="javascript:quarterChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div id="day-of-week-chart">
+                      <strong>Day of Week</strong>
+                      <a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div id="fluctuation-chart">
+                      <strong>Days by Fluctuation(%)</strong>
+                      <span class="reset" style="display: none;">range: <span class="filter"></span></span>
+                      <a class="reset" href="javascript:fluctuationChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div id="monthly-move-chart">
+                      <strong>Monthly Index Abs Move & Volume/500,000 Chart</strong>
+                      <span class="reset" style="display: none;">range: <span class="filter"></span></span>
+                      <a class="reset" href="javascript:moveChart.filterAll();volumeChart.filterAll();dc.redrawAll();"
+                        style="display: none;">reset</a>
+
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                      <div id="monthly-volume-chart">
+                      </div>
+                      <p class="muted pull-right" style="margin-right: 15px;">select a time range to zoom in</p>
+                  </div>
+
+                  <div class="row">
+                      <div>
+                          <div class="dc-data-count">
+                              <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a
+                                  href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+                          </div>
+                      </div>
+                      <table class="table table-hover dc-data-table">
+                          <thead>
+                          <tr class="header">
+                              <th>Date</th>
+                              <th>Open</th>
+                              <th>Close</th>
+                              <th>Change</th>
+                              <th>Volume</th>
+                          </tr>
+                          </thead>
+                      </table>
+                  </div>
+
 
                   <div class="cluster-summary"></div>
                 </div><!--Regional Funding-->
@@ -307,20 +404,7 @@
                 </div><!--Sudan Funding-->
 
               </div>
-              <div class="funding-right sidebar">
-                <select name='numbers' id='numbers' class="form-control">
-                  <option value='regionalfunding' selected='selected'>Regional</option>
-                  <option value='southsudanfunding'>South Sudan</option>
-                  <option value='kenyafunding'>Kenya</option>
-                  <option value='ethiopiafunding'>Ethiopia</option>
-                  <option value='somaliafunding'>Somalia</option>
-                  <option value='eritreafunding'>Eritrea</option>
-                  <option value='ugandafunding'>Uganda</option>
-                  <option value='burundifunding'>Burundi</option>
-                  <option value='djiboutifunding'>Djibouti</option>
-                  <option value='sudanfunding'>Sudan</option>
-                </select> 
-              </div>              
+                            
             </div><!--End Funding-->
 
             <div id="conflict">
@@ -344,16 +428,18 @@
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/vendor/d3.v3.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <script src="js/vendor/crossfilter.min.js"></script>
         <script src="js/vendor/dc.min.js"></script>
         <script src="js/vendor/highcharts.js"></script>
         <script src="js/vendor/organictabs.jquery.js"></script>
+        <script src="js/vendor/colorbrewer.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/fundingtrend.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
