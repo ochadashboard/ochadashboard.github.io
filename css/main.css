@@ -25,6 +25,11 @@ ul.dashboard{list-style-type: none;}
 .funding-block{background: #ffffff;height: 300px;border-radius: 3px;}
 .requested-sum{font-size: 7em;}
 
+/*Map conflicts*/
+#conflictmap {
+height: 500px;
+}
+
 
 
 
