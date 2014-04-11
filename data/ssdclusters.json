@@ -1,0 +1,14 @@
+[
+	{
+		"cluster":"Education",
+		"year":"2011",
+		"country":"South Sudan",
+		"amount":"320,000",
+	},
+	{
+		"cluster":"Health",
+		"year":"2011",
+		"country":"Kenya",
+		"amount":"320,000",
+	}
+]
