@@ -23,6 +23,7 @@ ul.dashboard{list-style-type: none;}
 .funding-block{background: #ffffff;height: 300px;border-radius: 3px;}
 .funding-introduction {display: block;height: 40px;background: white;}
 .requested-sum{font-size: 7em;}
+.cluster-funding{background: #ffffff;min-height: 300px;}
 
 /*Map conflicts*/
 #conflictmap {
