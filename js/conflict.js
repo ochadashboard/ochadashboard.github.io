@@ -1,16 +1,22 @@
 $(window).on('load', function() {
   $('#conflictmap').jHERE({
         enable: ['behavior'],
-        center: [52.500556, 13.398889],
-        zoom: 8,
+        center: [5.223331, 34.458620],
+        zoom: 7,
         type: 'terrain'
-    }).jHERE('marker', [52.500556, 13.338889], {
-    	icon: 'http://jhere.net/images/pin-black.png',
+    }).jHERE('marker', [5.223331, 34.458620], {
+    	icon: 'img/war.png',
         anchor: {x: 12, y: 32},
-        click: function(){alert('Hallo from Berlin!');}
-    }).jHERE('marker', [48.500556, 13.338889], {
-    	icon: 'http://jhere.net/images/pin-black.png',
+        click: function(){
+            $.scrollTo('#conflict-reports');
+            $( "div.conflict-container" ).html("Conflict Report");
+        }
+    }).jHERE('marker', [4.223331, 33.458620], {
+    	icon: 'img/war.png',
         anchor: {x: 12, y: 32},
-        click: function(){alert('Hallo from Berlin!');}
+        click: function(){
+            $.scrollTo('#conflict-reports');
+            $( "div.conflict-container" ).html("test");
+        }
     });
 });

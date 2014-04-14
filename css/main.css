@@ -29,7 +29,10 @@ ul.dashboard{list-style-type: none;}
 #conflictmap {
 height: 500px;
 }
-
+#conflict-reports{
+	min-height: 300px;
+	background: #ffffff;
+}
 
 
 
