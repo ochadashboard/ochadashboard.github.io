@@ -4,6 +4,8 @@ body{padding: 0; height: 100%;}
 #dashboard{
 	height: 100%;
 }
+.left{float: left;height: 100%;}
+.right{float: right;height: 100%;}
 /*Bootstrap overrides*/
 .row{margin: 0;background: #ffffff;}
 
@@ -18,11 +20,14 @@ ul.dashboard{list-style-type: none;}
 /*Funding*/
 .funding-left{width: 100%;float: left;height: 100%;}
 #funding {height: 100%;width: 100%;}
-.funding-summary{min-height: 300px;margin: 0;margin-bottom: 10px;background: #dedad8;padding-bottom: 10px;}
+.funding-summary{min-height: 220px;margin: 0;margin-bottom: 10px;background: #dedad8;padding-bottom: 10px;overflow: hidden;}
 .funding-title{height: 40px;text-transform: uppercase;font-size: 2em;}
-.funding-block{background: #ffffff;height: 300px;border-radius: 3px;}
+.funding-block .left{width: 50%;}
+.funding-block .right{width: 50%;}
+.funding-block .units{font-size: 4em;font-family: 'Lato', sans-serif;font-weight: 900;}
+.funding-block{background: #ffffff;height: 160px;border-radius: 3px;overflow: hidden;}
 .funding-introduction {display: block;height: 40px;background: white;}
-.requested-sum{font-size: 7em;}
+.requested-sum{font-size: 4em;font-family: 'Lato', sans-serif;font-weight: 900;}
 .cluster-funding{background: #ffffff;min-height: 300px;}
 
 /*Map conflicts*/
