@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dc.css">
         <link rel="stylesheet" href="css/colorbrewer.css">
+         <link href="css/jquery.dynatable.css" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -452,10 +453,45 @@
 
             <div id="conflict">
               Recent Conflict Reports
-                <div id ="conflictmap"></div>
-                <div id="conflict-reports" class="row">
-                  <div class="conflict-container"></div>
-                </div>
+                <div class='container' id='main-container'>             
+            <div class='content'>
+                
+             <div class="dc-data-count">   <h1> <p class = "lead"><u>World GEOJSON Choropleth</u> <br> Countries with commodity mentions are shaded blue, with the darkness corresponding to number of mentions. You have 
+                    <span>
+                        <span class="filter-count"></span>
+                        selected out of 
+                        <span class="total-count"></span>
+                        mentions. 
+                        <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+                    </span><br>Public data source: <a href="http://tradingconsequences.blogs.edina.ac.uk/">Trading Consequences</a></p></h1> </div> 
+                
+                <h2></h2>
+                
+              
+    <div class="row">
+           <div class="span1" id="dc-row-graph">  </div>
+        <div class="span9" id="world-chart"> </div>
+      
+    </div>
+    
+                <div class="row">
+                  <div class="span9" div id ="dc-bar-chart"></div>
+        </div>
+                
+                 <div class="row">
+    <table class="table" id='dc-table-graph' >
+                                    <thead>
+                                        <tr>
+               <th data-dynatable-column="commodity_text">Commodity</th>
+              <th data-dynatable-column="page_id">Page ID</th>
+               <th data-dynatable-column="commodity_sentence_text">Commodity Sentence Text</th>
+                <th data-dynatable-column="pageURL">Document Link</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                
+                                </div>
+        </div>
             </div><!--End conflict-->
 
             <div id="drought">
@@ -481,8 +517,8 @@
         <script src="js/vendor/highcharts.js"></script>
         <script src="js/vendor/organictabs.jquery.js"></script>
         <script src="js/vendor/colorbrewer.js"></script>
-        <script src="js/vendor/jhere/jhere.min.js"></script>
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/jquery.dynatable.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
