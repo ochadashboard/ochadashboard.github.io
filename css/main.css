@@ -22,12 +22,13 @@ ul.dashboard{list-style-type: none;}
 #funding {height: 100%;width: 100%;}
 .funding-summary{min-height: 220px;margin: 0;margin-bottom: 10px;background: #dedad8;padding-bottom: 10px;overflow: hidden;}
 .funding-title{height: 40px;text-transform: uppercase;font-size: 2em;}
-.funding-block .left{width: 50%;}
+.funding-block .left{width: 50%;overflow: hidden;}
 .funding-block .right{width: 50%;}
+.funding-block .right p{color: #ffffff;}
 .funding-block .units{font-size: 4em;font-family: 'Lato', sans-serif;font-weight: 900;}
 .funding-block{background: #ffffff;height: 160px;border-radius: 3px;overflow: hidden;}
 .funding-introduction {display: block;height: 40px;background: white;}
-.requested-sum{font-size: 4em;font-family: 'Lato', sans-serif;font-weight: 900;}
+.requested-sum{font-size: 4em;font-family: 'Lato', sans-serif;font-weight: 900;margin: 0;}
 .cluster-funding{background: #ffffff;min-height: 300px;}
 
 /*Map conflicts*/
