@@ -7,7 +7,7 @@
 <html class="sidebar sidebar-discover">
 <!-- <![endif]-->
 <head>
-    <title>Ocha Dashboard | Funding</title>
+    <title>Conflict | Ocha Dashboard</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,6 @@
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
             '../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
@@ -51,21 +50,15 @@
             '../assets/components/plugins/ajaxify/davis.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/plugins/ajaxify/jquery.lazyjaxdavis.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/plugins/preload/pace/pace.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/common/forms/elements/bootstrap-select/assets/lib/js/bootstrap-select.js?v=v1.0.3-rc2',
-            '../assets/components/common/forms/elements/uniform/assets/lib/js/jquery.uniform.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/plugins/less-js/less.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/charts/flot/assets/lib/excanvas.js?v=v1.0.3-rc2',
-            '../assets/components/plugins/browser/ie/ie.prototype.polyfill.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/plugins/browser/ie/ie.prototype.polyfill.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* The initialization scripts always load last and are automatically and dynamically loaded when AJAX navigation is enabled; */
         bundle: [
             '../assets/components/plugins/ajaxify/ajaxify.init.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/plugins/preload/pace/preload.pace.init.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/core/js/animations.init.js?v=v1.0.3-rc2',
-            '../assets/components/common/tables/classic/assets/js/tables-classic.init.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/common/forms/elements/bootstrap-select/assets/custom/js/bootstrap-select.init.js?v=v1.0.3-rc2',
-            '../assets/components/common/forms/elements/uniform/assets/custom/js/uniform.init.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/core/js/sidebar.main.init.js?v=v1.0.3-rc2',
             '../assets/components/core/js/sidebar.discover.init.js?v=v1.0.3-rc2',
             '../assets/components/core/js/core.init.js?v=v1.0.3-rc2'
@@ -112,9 +105,7 @@
                                 </button>
                             </div>
                             <ul class="animated fadeIn">
-                                <li class="active"><a href="index.html?lang=en">Home</a>
-                                </li>
-                                <li><a href="funding.html?lang=en">Funding</a>
+                                <li class="active"><a href="funding.html?lang=en">Funding</a>
                                 </li>
                                 <li><a href="dashboard_users.html?lang=en">Conflict</a>
                                 </li>
@@ -127,8 +118,7 @@
                             </ul>
                         </div>
                     </li>
-                   
-                   <li>
+                    <li>
                         <a href="#sidebar-discover-financial" data-toggle="sidebar-discover" class="glyphicons calculator"><i></i><span>Funding</span></a>
                         <div id="sidebar-discover-financial" class="sidebar-discover-menu">
                             <div class="innerAll text-center border-bottom text-muted-dark">
@@ -147,11 +137,10 @@
                                 </li>
                             </ul>
                         </div>
-                    </li> 
+                    </li>
 
                     <li class="active">
-                       <a href="#sidebar-discover-media" class="glyphicons picture" data-toggle="sidebar-discover">
-                            <span class="badge pull-right badge-primary hidden-md">2</span><i></i>
+                        <a href="#sidebar-discover-media" class="glyphicons picture" data-toggle="sidebar-discover">
                             <span>Population</span>
                         </a>
                         <div id="sidebar-discover-media" class="sidebar-discover-menu">
@@ -167,9 +156,8 @@
                                 </li>
                             </ul>
                         </div>
-
-                    </li><!--//Population Menu-->
-
+                    </li>
+                    
                     <li>
                         <a href="#sidebar-discover-courses" class="glyphicons crown" data-toggle="sidebar-discover"><i></i><span>Education</span></a>
                         <div id="sidebar-discover-courses" class="sidebar-discover-menu">
@@ -192,7 +180,7 @@
                         <a href="#sidebar-discover-medical" data-toggle="sidebar-discover" class="glyphicons circle_plus"><i></i><span>Health</span></a>
                         <div id="sidebar-discover-medical" class="sidebar-discover-menu">
                             <div class="innerAll text-center border-bottom text-muted-dark">
-                                <strong>Health Data</strong>
+                                <strong>Medical App</strong>
                                 <button class="btn btn-xs btn-default close-discover"><i class="fa fa-fw fa-times"></i>
                                 </button>
                             </div>
@@ -216,7 +204,6 @@
                             </ul>
                         </div>
                     </li>
-                   
                     <li>
                         <a href="#sidebar-discover-content" data-toggle="sidebar-discover" class="glyphicons notes_2"><i></i><span>Conflict</span></a>
                         <div id="sidebar-discover-content" class="sidebar-discover-menu">
@@ -235,8 +222,6 @@
                             </ul>
                         </div>
                     </li>
-                                     
-                    
                     <li>
                         <a href="#sidebar-discover-financial" data-toggle="sidebar-discover" class="glyphicons calculator"><i></i><span>Drought</span></a>
                         <div id="sidebar-discover-financial" class="sidebar-discover-menu">
@@ -255,6 +240,7 @@
                             </ul>
                         </div>
                     </li>
+                   
                 </ul>
             </div>
         </div>
@@ -323,8 +309,6 @@
                         <ul class="dropdown-menu pull-right">
                             <li><a href="my_account.html?lang=en" class="glyphicons user"><i></i> Account</a>
                             </li>
-                            <li><a href="messages.html?lang=en" class="glyphicons envelope"><i></i>Messages</a>
-                            </li>
                             <li><a href="index.html?lang=en" class="glyphicons settings"><i></i>Settings</a>
                             </li>
                             <li><a href="login.html?lang=en" class="glyphicons lock no-ajaxify"><i></i>Logout</a>
@@ -332,322 +316,217 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="navbar-collapse collapse">
+
+                </div>
             </nav>
             <!-- // END navbar -->
+            <h2 class="">Users</h2>
             <div class="innerLR">
-                <h2 class="margin-none pull-left">Bookings</h2>
-                <div class="btn-group btn-group-sm pull-right">
-                    <a href="" class="btn btn-primary">Add booking</a>
-                </div>
-                <div class="clearfix"></div>
-                <!-- Filters -->
-                <div class="filter-bar">
-                    <form class="margin-none form-inline">
-                        <!-- From -->
-                        <div class="form-group col-md-2 padding-none">
-                            <label>From:</label>
-                            <div class="input-group">
-                                <input type="text" name="from" id="dateRangeFrom" class="form-control" value="08/05/13"
-                                />
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- // From END -->
-                        <!-- To -->
-                        <div class="form-group col-md-2 padding-none">
-                            <label>To:</label>
-                            <div class="input-group">
-                                <input type="text" name="to" id="dateRangeTo" class="form-control" value="08/18/13"
-                                />
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- // To END -->
-                        <!-- Min -->
-                        <div class="form-group col-md-2 padding-none">
-                            <label>Min:</label>
-                            <div class="input-group">
-                                <input type="text" name="from" class="form-control" value="100" />
-                                <span class="input-group-addon"><i class="fa fa-euro"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- // Min END -->
-                        <!-- Max -->
-                        <div class="form-group col-md-2 padding-none">
-                            <label>Max:</label>
-                            <div class="input-group">
-                                <input type="text" name="from" class="form-control" value="500" />
-                                <span class="input-group-addon"><i class="fa fa-euro"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- // Max END -->
-                        <!-- Select -->
-                        <div class="form-group col-md-3 padding-none">
-                            <label class="label-control">Select:</label>
-                            <div class="col-md-8 padding-none">
-                                <select name="from" class="form-control">
-                                    <option>Some option</option>
-                                    <option>Other option</option>
-                                    <option>Some other option</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- // Select END -->
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
-                <!-- // Filters END -->
-                <!-- Widget -->
-                <div class="widget widget-body-white">
-                    <!-- Widget heading -->
-                    <div class="widget-head">
-                        <h4 class="heading glyphicons calendar"><i></i> Monday, 10 June 2013</h4>
-                    </div>
-                    <!-- // Widget heading END -->
-                    <div class="widget-body">
-                        <!-- Total bookings & sort by options -->
-                        <div class="separator bottom">
-                            Total bookings: 26
-                            <span class="pull-right">
-                                <label class="strong">Sort by:</label>
-                                <select class="selectpicker margin-none" data-style="btn-default btn-xs">
-                                    <option>Option</option>
-                                    <option>Option</option>
-                                    <option>Option</option>
-                                </select>
-                            </span>
-                            <div class="clearfix"></div>
-                        </div>
-                        <!-- // Total bookings & sort by options END -->
-                        <!-- Table -->
-                        <table class="table table-condensed table-striped table-primary table-vertical-center checkboxs">
-                            <thead>
-                                <tr>
-                                    <th style="width: 1%;" class="uniformjs">
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th class="center">No.</th>
-                                    <th class="center">Time</th>
-                                    <th>Client</th>
-                                    <th class="center">Phone</th>
-                                    <th class="center">Amount</th>
-                                    <th class="center">Heard from</th>
-                                    <th class="center" style="width: 150px;">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Item -->
-                                <tr class="selectable">
-                                    <td class="center uniformjs">
-                                        <input type="checkbox" />
-                                    </td>
-                                    <td class="center">1</td>
-                                    <td class="center">11:00</td>
-                                    <td>
-                                        <strong>Lorem Ipsum</strong>
-                                        <br/>
-                                        <small>Location: Las Vegas</small>
-                                    </td>
-                                    <td class="center">0740000000</td>
-                                    <td class="center">&euro;46</td>
-                                    <td class="center">Flyer</td>
-                                    <td class="center">
-                                        <div class="btn-group btn-group-sm">
-                                            <a href="#" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-success"><i class="fa fa-pencil"></i></a>
-                                            <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- // Item END -->
-                                <!-- Item -->
-                                <tr class="selectable selected">
-                                    <td class="center uniformjs">
-                                        <input type="checkbox" checked="checked" />
-                                    </td>
-                                    <td class="center">2</td>
-                                    <td class="center">12:00</td>
-                                    <td>
-                                        <strong>Lorem Ipsum</strong>
-                                        <br/>
-                                        <small>Location: Hollywood</small>
-                                    </td>
-                                    <td class="center">0740000000</td>
-                                    <td class="center">&euro;12</td>
-                                    <td class="center">Friend</td>
-                                    <td class="center">
-                                        <div class="btn-group btn-group-sm">
-                                            <a href="#" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-success"><i class="fa fa-pencil"></i></a>
-                                            <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- // Item END -->
-                                <!-- Item -->
-                                <tr class="selectable">
-                                    <td class="center uniformjs">
-                                        <input type="checkbox" />
-                                    </td>
-                                    <td class="center">3</td>
-                                    <td class="center">13:00</td>
-                                    <td>
-                                        <strong>Lorem Ipsum</strong>
-                                        <br/>
-                                        <small>Location: Hollywood</small>
-                                    </td>
-                                    <td class="center">0740000000</td>
-                                    <td class="center">&euro;44</td>
-                                    <td class="center">Google Search</td>
-                                    <td class="center">
-                                        <div class="btn-group btn-group-sm">
-                                            <a href="#" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-success"><i class="fa fa-pencil"></i></a>
-                                            <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- // Item END -->
-                                <!-- Item -->
-                                <tr class="selectable">
-                                    <td class="center uniformjs">
-                                        <input type="checkbox" />
-                                    </td>
-                                    <td class="center">4</td>
-                                    <td class="center">14:00</td>
-                                    <td>
-                                        <strong>Lorem Ipsum</strong>
-                                        <br/>
-                                        <small>Location: Miami</small>
-                                    </td>
-                                    <td class="center">0740000000</td>
-                                    <td class="center">&euro;43</td>
-                                    <td class="center">Radio</td>
-                                    <td class="center">
-                                        <div class="btn-group btn-group-sm">
-                                            <a href="#" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-success"><i class="fa fa-pencil"></i></a>
-                                            <a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- // Item END -->
-                            </tbody>
-                        </table>
-                        <!-- // Table END -->
-                        <!-- With selected actions -->
-                        <div class="pull-left checkboxs_actions hide-2">
-                            <label class="strong">With selected:
-                                <select class="selectpicker margin-none" data-style="btn-default btn-small">
-                                    <option>Action</option>
-                                    <option>Action</option>
-                                    <option>Action</option>
-                                </select>
-                            </label>
-                        </div>
-                        <!-- // With selected actions END -->
-                        <!-- Pagination -->
-                        <ul class="pagination pull-right margin-none">
-                            <li class="disabled"><a href="#">&laquo;</a>
-                            </li>
-                            <li class="active"><a href="#">1</a>
-                            </li>
-                            <li><a href="#">2</a>
-                            </li>
-                            <li><a href="#">3</a>
-                            </li>
-                            <li><a href="#">&raquo;</a>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <!-- // Pagination END -->
-                    </div>
-                </div>
-                <!-- // Widget -->
-                <!-- Row -->
                 <div class="row">
-                    <!-- Column -->
                     <div class="col-md-4">
                         <!-- Widget -->
-                        <div class="widget widget-3">
-                            <!-- Widget heading -->
-                            <div class="widget-head">
-                                <h4 class="heading">
-                                    <span class="glyphicons coins"><i></i>
-                                    </span>Total amount</h4>
+                        <div class="widget widget-body-white">
+                            <div class="media widget-body innerAll">
+                                <a href="" class="pull-left">
+                                    <img src="../assets/images/people/50/16.jpg" alt="" class="">
+                                </a>
+                                <div class="media-body innerL half">
+                                    <h4 class="margin-none"><a href="" class="strong text-primary">Adrian Demian</a>
+                                    </h4>
+                                    <p class="text-muted">Senior UI Designer</p>
+                                    <div class="bg-gray">
+                                        <h5 class="innerB half border-bottom innerAll half"><i class="fa fa-fw icon-briefcase-2"></i> MOSAICPRO
+                                            LLC
+                                        </h5>
+                                        <p class="margin-none innerAll half"><a href="">4 members</a>  <i class="fa fa-fw fa-code-fork fa-rotate-90"></i> 
+                                            <a href="" class="text-success">13 products</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- // Widget heading END -->
-                            <div class="widget-body large">
-                                &euro;15,368.50
-                            </div>
-                            <!-- Widget footer -->
-                            <div class="widget-footer align-right">
-                                <a href="#" class="glyphicons print"><i></i> Print</a>
-                                <a href="#" class="glyphicons list"><i></i> View</a>
-                            </div>
-                            <!-- // Widget footer END -->
                         </div>
-                        <!-- // Widget END -->
+                        <!-- //Widget -->
+                        <!-- Widget -->
+                        <div class="widget">
+                            <div class="widget-body padding-none">
+                                <h4 class="innerAll bg-gray border-bottom margin-bottom-none">Skills</h4>
+                                <div class="innerAll">
+                                    <div class="progress bg-white progress-mini progress-primary count-outside add-outside">
+                                        <div class="count">100%</div>
+                                        <div class="progress-bar progress-bar-primary" style="width: 100%;"></div>
+                                        <div class="add">HTML</div>
+                                    </div>
+                                    <div class="progress bg-white progress-mini progress-primary count-outside add-outside">
+                                        <div class="count">90%</div>
+                                        <div class="progress-bar progress-bar-primary" style="width: 90%;"></div>
+                                        <div class="add">CSS</div>
+                                    </div>
+                                    <div class="progress bg-white progress-mini progress-primary count-outside add-outside">
+                                        <div class="count">93%</div>
+                                        <div class="progress-bar progress-bar-primary" style="width: 93%;"></div>
+                                        <div class="add">jQuery</div>
+                                    </div>
+                                    <div class="progress bg-white progress-mini progress-primary count-outside add-outside">
+                                        <div class="count">79%</div>
+                                        <div class="progress-bar progress-bar-primary" style="width: 79%;"></div>
+                                        <div class="add">PHP</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //Widget -->
+                        <!-- Widget -->
+                        <div class="widget">
+                            <div class="widget-body padding-none">
+                                <h4 class="innerAll bg-gray border-bottom margin-bottom-none">Experience</h4>
+                                <ul class="fa-ul innerAll">
+                                    <li>
+                                        <span class="pull-right text-faded text-small">just now</span><i class="fa fa-li fa-check text-success"></i> QUICK
+                                        Admin - App &amp; Website</li>
+                                    <li>
+                                        <span class="pull-right text-faded text-small">14 days ago</span><i class="fa fa-li fa-check text-success"></i> FLAT
+                                        PLUS
+                                    </li>
+                                    <li>
+                                        <span class="pull-right text-faded text-small">2 months ago</span><i class="fa fa-li fa-check text-success"></i> FLAT
+                                        KIT
+                                    </li>
+                                    <li>
+                                        <span class="pull-right text-faded text-small">3 months ago</span><i class="fa fa-li fa-check text-success"></i> CORAL
+                                        <li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //Widget -->
                     </div>
-                    <!-- // Column END -->
-                    <!-- Column -->
+                    <!-- //End Col -->
                     <div class="col-md-4">
                         <!-- Widget -->
-                        <div class="widget widget-3">
-                            <!-- Widget heading -->
-                            <div class="widget-head">
-                                <h4 class="heading">
-                                    <span class="glyphicons user_add"><i></i>
-                                    </span>New clients</h4>
+                        <div class="widget">
+                            <div class="widget-body padding-none">
+                                <h4 class="innerAll bg-gray border-bottom margin-bottom-none">Account</h4>
+                                <div class="innerAll">
+                                    <i class="fa fa-5x icon-documents-line text-muted pull-right"></i>
+                                    <div class="">
+                                        <p>Status: Active</p>
+                                        <p>Due: &euro;29.50 (1 month)</p>
+                                        <p>Referrals: 10</p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- // Widget heading END -->
-                            <div class="widget-body large">
-                                21
-                            </div>
-                            <!-- Widget footer -->
-                            <div class="widget-footer">
-                                <a href="#" class="glyphicons print"><i></i> Print</a>
-                                <a href="#" class="glyphicons list"><i></i> View</a>
-                            </div>
-                            <!-- // Widget footer END -->
                         </div>
-                        <!-- // Widget END -->
+                        <!-- //Widget -->
+                        <!-- Widget -->
+                        <div class="widget overflow-hidden">
+                            <div class="widget-head height-auto bg-gray border-bottom innerAll">
+                                <div class="innerT pull-right">
+                                    <div class="btn-group pull-right">
+                                        <button class="btn btn-default"><i class="fa fa-caret-left"></i>
+                                        </button>
+                                        <button class="btn btn-default"><i class="fa fa-caret-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pull-left innerT innerL">
+                                    <h4 class="margin-none">Wednesday</h4>
+                                    <p class="text-muted-dark">25.12.2013</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="widget-body">
+                                <div class="innerB">
+                                    <ul class="list-unstyled innerAll">
+                                        <li class="border-bottom innerTB half"><i class="fa fa-fw fa-times text-muted-dark"></i> Lunch
+                                            with Dana</li>
+                                        <li class="border-bottom innerTB half"><i class="fa fa-fw fa-times text-muted-dark"></i> Email
+                                            Adrian
+                                        </li>
+                                        <li class="border-bottom innerTB half"><i class="fa fa-fw fa-times text-muted-dark"></i> Call
+                                            Daniel
+                                        </li>
+                                        <li class="border-bottom innerTB half"><i class="fa fa-fw fa-times text-muted-dark"></i> Some
+                                            other important stuff</li>
+                                    </ul>
+                                </div>
+                                <a href="" class="btn btn-sm btn-success"><i class="fa fa-plus fa-fw"></i> Add note</a>
+                                <a href="" class="btn btn-sm pull-right"><i class="fa fa-envelope fa-fw"></i> Email</a>
+                            </div>
+                        </div>
+                        <!-- //Widget -->
                     </div>
-                    <!-- // Column -->
-                    <!-- Column -->
+                    <!-- //End Col -->
                     <div class="col-md-4">
                         <!-- Widget -->
-                        <div class="widget widget-3">
-                            <!-- Widget heading -->
-                            <div class="widget-head">
-                                <h4 class="heading">
-                                    <span class="glyphicons user_remove"><i></i>
-                                    </span>Cancellations</h4>
+                        <div class="widget border-top-none ">
+                            <div class="bg-gray">
+                                <h4 class="innerAll  border-top  border-bottom margin-bottom-none">Profile Completion:
+                                    <p class="margin-none strong pull-right">72%</p>
+                                </h4>
                             </div>
-                            <!-- // Widget heading END -->
-                            <div class="widget-body large cancellations">
-                                4
-                                <span>
-                                    <span>Lost</span>
-                                    <span>&euro;89.00</span>
-                                </span>
+                            <div class="progress progress-mini margin-none bg-gray border-bottom">
+                                <div class="progress-bar progress-bar-success" style="width: 72%;"></div>
                             </div>
-                            <!-- Widget footer -->
-                            <div class="widget-footer align-center">
-                                <a href="#" class="glyphicons print"><i></i> Print</a>
-                                <a href="#" class="glyphicons list"><i></i> View</a>
+                            <div class="innerAll ">
+                                <div class="media half">
+                                    <a href="" class="pull-left">
+                                        <img src="../assets/images/people/50/3.jpg" alt="" class="img-circle">
+                                    </a>
+                                    <div class="media-body innerB half">
+                                        <a href="#" class='btn btn-default btn-xs pull-right'>Complete <i class="fa fa-angle-double-right"></i></a>
+                                        <a href="" class="margin-none strong text-regular display-block">Lisa Alda </a>
+                                        <small class="text-muted-dark">Project Manager</small>
+                                        <div class="clearfix"></div>
+                                        <div class="innerT half">
+                                            <a href="" class="btn btn-default btn-xs"><i class=" fa fa-star text-muted"></i></a>
+                                            <a href="" class="btn btn-default btn-xs"><i class=" fa fa-user text-muted"></i></a>
+                                            <a href="" class="btn btn-default btn-xs"><i class=" fa fa-envelope text-muted"></i></a>
+                                            <a href="" class="btn btn-default btn-xs"><i class=" fa fa-twitter text-muted"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- // Widget footer END -->
                         </div>
-                        <!-- // Widget END -->
+                        <!-- //Widget -->
+                        <!-- Widget	 -->
+                        <div class="widget widget-body-white padding-none ">
+                            <div class="widget-head height-auto">
+                                <div class="media">
+                                    <a href="" class="pull-left innerAll half">
+                                        <img src="../assets/images/people/50/8.jpg" alt="">
+                                    </a>
+                                    <div class="media-body innerT">
+                                        <a href="" class="btn btn-default btn-xs pull-right"><i class="fa icon-comment-fill-1"></i></a>
+                                        <h4 class="margin-none">Emanuel L.</h4>
+                                        <p class=" text-muted-dark margin-none">Project Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="innerAll half border-bottom">
+                                    <i class="fa fa-fw icon-user-1 text-muted"></i> 
+                                    <a href="" class="">Team Members</a>
+                                </li>
+                                <li class="innerAll half border-bottom">
+                                    <i class="fa fa-fw fa-dashboard text-muted"></i> 
+                                    <a href="" class="">Active Projects</a>
+                                </li>
+                                <li class="innerAll half border-bottom">
+                                    <span class="badge badge-default pull-right">59</span>
+                                    <i class="fa fa-fw icon-browser-check text-muted"></i>
+                                    <a href="" class=""> Completed Tasks</a>
+                                </li>
+                                <li class="innerAll half">
+                                    <i class="fa fa-fw fa-file-text-o text-muted"></i> 
+                                    <a href="" class="">Files under review</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //Widget -->
                     </div>
-                    <!-- // Column -->
+                    <!-- //End Col -->
                 </div>
-                <!-- // Row END -->
+                <!-- End Row -->
             </div>
         </div>
         <!-- // Content END -->
@@ -655,8 +534,7 @@
         <!-- // Sidebar menu & content wrapper END -->
         <div id="footer" class="hidden-print">
             <!--  Copyright Line -->
-            <div class="copy">&copy; 2014 OchaEA
-            </div>
+            <div class="copy">&copy; 2012 - 2014 OCHA</div>
             <!--  End Copyright Line -->
         </div>
         <!-- // Footer END -->
