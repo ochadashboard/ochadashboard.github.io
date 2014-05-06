@@ -1,5 +1,7 @@
 $(document).ready(function () {
     $(function() {
+        var chart;
+        var chart2;
         // Create the chart
         chart = new Highcharts.Chart({
             chart: {
