@@ -45,10 +45,10 @@ $(document).ready(function () {
             type: 'bar'
         },
         title: {
-            text: 'Historic World Population by Region'
+            text: 'Cluster Funding for Kenya 2014'
         },
         subtitle: {
-            text: 'Source: Wikipedia.org'
+            text: 'Source: fts.unocha.org'
         },
         xAxis: {
             categories: ['Nominated', 'Approved','Rejected', 'Pending']
