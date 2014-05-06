@@ -35,9 +35,11 @@ $(document).ready(function () {
                 }
             }]
         });
+
+        
     });
-    $(function () {
-    chart = new Highcharts.Chart({
+    
+    chart2 = new Highcharts.Chart({
         chart: {
             renderTo: 'kenyatrends',
             type: 'bar'
@@ -77,5 +79,5 @@ $(document).ready(function () {
             data: [973, 914, 4054, 732]
         }]
     });
-});
+
 });

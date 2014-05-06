@@ -36,14 +36,16 @@
         /* CORE scripts always load first; */
         core: [
             '../assets/components/library/jquery/jquery.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
             '../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/maps/vector/assets/lib/jquery-jvectormap-1.2.2.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2'
+            '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
+            '../assets/components/library/jquery/ochaindex.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
         plugins: [
@@ -333,11 +335,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="widget innerAll text-center">
-                                    <h3 class="innerT">Percentage Funding</h3>
-                                    <p class="innerB margin-none text-xlarge text-condensed strong text-primary">+281</p>
-                                    <div class="innerTB">
-                                        <div class="sparkline" sparkHeight="57">0:10,7:3,5:5,6:4,3:7,7:3,5:5,6:4,2:8,3:7,7:3,5:5,0:10</div>
-                                    </div>
+                                    <div id="regionaltrends" style="min-width: 300px; height: 300px; margin: 0 auto"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
