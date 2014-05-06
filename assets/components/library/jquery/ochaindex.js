@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    chart2 = new Highcharts.Chart({
+    var indexchart2;
+    indexchart2 = new Highcharts.Chart({
             chart: {
                 renderTo: 'regionaltrends',
                 type: 'pie'
