@@ -36,14 +36,16 @@
         /* CORE scripts always load first; */
         core: [
             '../assets/components/library/jquery/jquery.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
             '../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2'
+            '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
+            '../assets/components/library/jquery/ochacustom.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
         plugins: [
@@ -324,6 +326,48 @@
                 <h3 class="margin-none pull-left">Kenya Funding</h3>
                 
                 <div class="clearfix"></div>
+                Cluster Funding
+                  <grouping>
+                    <group>
+                    <amount>27482738</amount>
+                    <type>SECTOR NOT YET SPECIFIED</type>
+                    </group>
+                    <group>
+                    <amount>3611130</amount>
+                    <type>COORDINATION AND SUPPORT SERVICES</type>
+                    </group>
+                    <group>
+                    <amount>3556771</amount>
+                    <type>WATER AND SANITATION</type>
+                    </group>
+                    <group>
+                    <amount>3546267</amount>
+                    <type>MULTI-SECTOR</type>
+                    </group>
+                    <group>
+                    <amount>2640065</amount>
+                    <type>FOOD</type>
+                    </group>
+                    <group>
+                    <amount>1606105</amount>
+                    <type>HEALTH</type>
+                    </group>
+                    <group>
+                    <amount>852290</amount>
+                    <type>PROTECTION/HUMAN RIGHTS/RULE OF LAW</type>
+                    </group>
+                    <group>
+                    <amount>479061</amount>
+                    <type>SHELTER AND NON-FOOD ITEMS</type>
+                    </group>
+                    <group>
+                    <amount>217344</amount>
+                    <type>EDUCATION</type>
+                    </group>
+                    </grouping>
+                    <grouping_type>sector</grouping_type>
+                    <total>43991771</total>
+                    </funding>
                 <div class="row">
                     <div class="col-md-12">
                         <!-- Filters -->
