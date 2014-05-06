@@ -36,13 +36,15 @@
         /* CORE scripts always load first; */
         core: [
             '../assets/components/library/jquery/jquery.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
             '../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/jquery/ochacustom.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
         plugins: [
@@ -137,7 +139,7 @@
                                 </button>
                             </div>
                             <ul class="animated fadeIn">
-                                <li><a href="fundingoverview.html?lang=en"><i class="fa fa-file-text-o"></i>Overview</a>
+                                <li><a href="funding.html?lang=en"><i class="fa fa-file-text-o"></i>Overview</a>
                                 </li>
                                 <li><a href="kenyafunding.html?lang=en"><i class="fa fa-legal"></i>Kenya</a>
                                 </li>
@@ -155,7 +157,6 @@
 
                     <li>
                         <a href="#sidebar-discover-media" class="glyphicons picture" data-toggle="sidebar-discover">
-                            <span class="badge pull-right badge-primary hidden-md">2</span><i></i>
                             <span>Population</span>
                         </a>
                         <div id="sidebar-discover-media" class="sidebar-discover-menu">
@@ -330,6 +331,38 @@
                   Funding data as collected from fts.unocha.org            
                 </div>
                 <!-- Filters -->
+                
+                <div class="widget widget-heading-simple widget-body-gray">
+                    
+                    <div class="widget-body">
+                        <!-- 3 Column Grid / One Third -->
+                        <div class="row">
+                            <!-- One Third Column -->
+                            <div class="col-md-4">
+                                <h4>Requested Funding</h4>
+                                <p>2,562,592,726</p>
+                            </div>
+                            <!-- // One Third Column END -->
+                            <!-- One Third Column -->
+                            <div class="col-md-4">
+                                <div id="chart-container" style="min-width: 300px; height: 300px; margin: 0 auto"></div>
+                            </div>
+                            <!-- // One Third Column END -->
+                            <!-- One Third Column -->
+                            <div class="col-md-4">
+                                <h4>Column</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing
+                                    and typesetting industry. Lorem Ipsum has been
+                                    the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen
+                                    book.</p>
+                            </div>
+                            <!-- // One Third Column END -->
+                        </div>
+                        <!-- // 3 Column Grid / One Third END -->
+                    </div>
+                </div>
                 <div class="filter-bar">
                     <form class="margin-none form-inline">
                         <!-- From -->
@@ -670,5 +703,7 @@
         ajaxify_layout_app: false
     };
     </script>
+    
+
 </body>
 </html>

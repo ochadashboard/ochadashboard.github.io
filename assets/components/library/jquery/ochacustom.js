@@ -1,0 +1,39 @@
+$(document).ready(function () {
+    $(function() {
+        // Create the chart
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart-container',
+                type: 'pie'
+            },
+            title: {
+                text: 'Funding Statistics 6 May 2014'
+            },
+            yAxis: {
+                title: {
+                    text: 'Total percent market share'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+                }
+            },
+            series: [{
+                name: 'Browsers',
+                data: [["Unmet Funding",6],["Met Funding",4]],
+                size: '80%',
+                innerSize: '40%',
+                showInLegend:true,
+                dataLabels: {
+                    enabled: false
+                }
+            }]
+        });
+    });
+});
