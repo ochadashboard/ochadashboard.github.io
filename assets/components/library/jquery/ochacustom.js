@@ -36,26 +36,46 @@ $(document).ready(function () {
             }]
         });
     });
-    $(function() {
-    var chart = new Highcharts.Chart({
-
+    $(function () {
+    chart = new Highcharts.Chart({
         chart: {
-            renderTo: 'kenyatrends-container',
-            type: 'column'
+            renderTo: 'kenyatrends',
+            type: 'bar'
+        },
+        title: {
+            text: 'Historic World Population by Region'
+        },
+        subtitle: {
+            text: 'Source: Wikipedia.org'
+        },
+        xAxis: {
+            categories: ['Nominated', 'Approved','Rejected', 'Pending']
+
         },
         yAxis: {
-            title: {
-                text: 'axis title',
-                useHTML: true,
-                style: {
-                    "-webkit-transform": "rotate(90deg)",
-                    "-moz-transform": "rotate(90deg)", 
-                    "-o-transform": "rotate(90deg)"
+            labels:
+            {
+                enabled:false
+            }
+
+        },
+
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
                 }
             }
         },
-        series: [{
-            data: [23,45,12,89,123,12,5]}]
 
+
+        series: [{
+            name: 'Employment',
+            data: [107, 31, 635, 203]
+        }, {
+            name: 'Internship',
+            data: [973, 914, 4054, 732]
+        }]
     });
+});
 });
