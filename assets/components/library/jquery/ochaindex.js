@@ -12,6 +12,9 @@ $(document).ready(function () {
                     text: 'Total percent market share'
                 }
             },
+            credits: {
+                enabled: false
+            },
             plotOptions: {
                 pie: {
                     shadow: false
