@@ -45,6 +45,7 @@
             '../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
+            '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2',
             '../assets/components/library/jquery/ochacustom.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
@@ -270,50 +271,7 @@
                 </div>
                 <ul class="main pull-right ">
                     <li class="dropdown notif notifications hidden-xs">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell-fill"></i> <span class="label label-danger">5</span></a>
-                        <ul class="dropdown-menu chat media-list pull-right">
-                            <li class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object thumb" src="../assets/images/people/100/15.jpg" alt="50x50"
-                                    width="50" />
-                                </a>
-                                <div class="media-body">
-                                    <span class="label label-default pull-right">5 min</span>
-                                    <h5 class="media-heading">Adrian D.</h5>
-                                    <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object thumb" src="../assets/images/people/100/16.jpg" alt="50x50"
-                                    width="50" />
-                                </a>
-                                <div class="media-body">
-                                    <span class="label label-default pull-right">2 days</span>
-                                    <h5 class="media-heading">Jane B.</h5>
-                                    <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object thumb" src="../assets/images/people/100/17.jpg" alt="50x50"
-                                    width="50" />
-                                </a>
-                                <div class="media-body">
-                                    <span class="label label-default pull-right">3 days</span>
-                                    <h5 class="media-heading">Andrew M.</h5>
-                                    <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li><a href="#" class="btn btn-primary"><i class="fa fa-list"></i> <span>View all messages</span></a>
-                            </li>
-                        </ul>
+                        
                     </li>
                     
                 </ul>
@@ -323,39 +281,40 @@
             </nav>
             <!-- // END navbar -->
             <div class="innerLR">
-                <h3 class="margin-none pull-left">Kenya Funding</h3>
+                <h3 class="margin-none pull-left">Kenya Funding <div>Todays Date</div></h3>
                 
                 <div class="clearfix"></div>
                 <div class="row">
-                <h3>2014 Funding Summary</h3>
+                    <h3>2014 Funding Summary</h3>
                     <div class="col-md-4">
                         <div class="widget innerAll">
-                            <div class="well text-center margin-none">
-                                <p class="strong">Requested Funding</p>
-                                <strong class="text-large">&euro;132,156.00</strong>
-                            </div>
+                            <div class="col-md-3 alert alert-primary">Requested Funding</div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="widget innerAll">
                             <div class="well text-center margin-none">
-                                <p class="strong">Met Funding</p>
-                                <strong class="text-large">&euro;122,134.00</strong>
+                                <div class="col-md-3 alert alert-success">Met Funding</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="widget innerAll">
-                            <div class="well text-center margin-none">
-                                <p class="strong">UnMet Funding</p>
-                                <strong class="text-large">&euro;10,134.00</strong>
-                            </div>
+                            <div class="col-md-3 alert alert-danger">Unmet Funding</div>
                         </div>
                     </div>
                 
                 </div>
-                Cluster Funding Breakdown For 2014
-                <div id="kenyatrends" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+                
+                <div class="row">
+                  Funding Breakdown For 2014
+                  <div class="col-md-4 pull-left">
+                      Breakdown
+                  </div>
+                    <div class="col-md-8 pull-right">
+                        Graphs
+                    </div>
+                </div>
                   <amount>27482738</amount>
                     <type>SECTOR NOT YET SPECIFIED</type>
                     </group>
