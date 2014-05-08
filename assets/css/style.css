@@ -42,3 +42,8 @@ box-shadow: none;
 .regional-summary-block{
   min-height: 350px;
 }
+#regional-funding-summary{
+ border-right: 1px solid blue;
+}
+.summary-bottom{}
+.summary-top{}
