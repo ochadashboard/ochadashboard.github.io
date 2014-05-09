@@ -1,75 +1,71 @@
-var chart = AmCharts.makeChart("chartdiv", {
-    "type": "serial",
-    "theme": "none",
-    "dataProvider": [{
-        "country": "2015",
-        "visits": 2025
-    }, {
-        "country": "2014",
-        "visits": 1882
-    }, {
-        "country": "2013",
-        "visits": 1809
-    }, {
-        "country": "2012",
-        "visits": 1322
-    }, {
-        "country": "UK",
-        "visits": 1122
-    }, {
-        "country": "France",
-        "visits": 1114
-    }, {
-        "country": "India",
-        "visits": 984
-    }, {
-        "country": "Spain",
-        "visits": 711
-    }, {
-        "country": "Netherlands",
-        "visits": 665
-    }, {
-        "country": "Russia",
-        "visits": 580
-    }, {
-        "country": "South Korea",
-        "visits": 443
-    }, {
-        "country": "Canada",
-        "visits": 441
-    }, {
-        "country": "Brazil",
-        "visits": 395
-    }],
-    "valueAxes": [{
-        "gridColor":"#FFFFFF",
-		"gridAlpha": 0.2,
-		"dashLength": 0
-    }],
-    "gridAboveGraphs": true,
-    "startDuration": 1,
-    "graphs": [{
-        "balloonText": "[[category]]: <b>[[value]]</b>",
-        "fillAlphas": 0.8,
-        "lineAlpha": 0.2,
-        "type": "column",
-        "valueField": "visits"		
-    }],
-    "chartCursor": {
-        "categoryBalloonEnabled": false,
-        "cursorAlpha": 0,
-        "zoomable": false
-    },
-    "categoryField": "country",
-    "categoryAxis": {
-        "gridPosition": "start",
-        "gridAlpha": 0
-    },
-	"exportConfig":{
-	  "menuTop": 0,
-	  "menuItems": [{
-      "icon": '/lib/3/images/export.png',
-      "format": 'png'	  
-      }]  
-	}
+$(document).ready(function () {
+$(function () {
+        var chart;
+        chart = new Highcharts.Chart({
+            chart: {
+                type: 'column',
+                renderTo: 'chartdiv',
+            },
+            title: {
+                text: 'Stacked column chart'
+            },
+            xAxis: {
+                categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Total fruit consumption'
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -70,
+                verticalAlign: 'top',
+                y: 20,
+                floating: true,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                borderColor: '#CCC',
+                borderWidth: 1,
+                shadow: false
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y +'<br/>'+
+                        'Total: '+ this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'John',
+                data: [5, 3, 4, 7, 2]
+            }, {
+                name: 'Jane',
+                data: [2, 2, 3, 2, 1]
+            }, {
+                name: 'Joe',
+                data: [3, 4, 4, 2, 5]
+            }]
+        });
+    });
 });
+    
