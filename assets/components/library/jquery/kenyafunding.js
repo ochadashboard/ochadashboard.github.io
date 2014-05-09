@@ -1,10 +1,10 @@
 $(document).ready(function () {
 $(function () {
-        var chart;
-        chart = new Highcharts.Chart({
+    
+        var chart = new Highcharts.Chart({
             chart: {
                 type: 'column',
-                renderTo: 'chartdiv',
+                renderTo: 'kenyachartdiv',
             },
             title: {
                 text: 'Stacked column chart'

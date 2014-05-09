@@ -41,7 +41,6 @@
             '../assets/components/library/jquery/jquery.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2',
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
@@ -49,10 +48,6 @@
             '../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
-            
-            '../assets/components/library/ammap/ammap.js?v=v1.0.3-rc2',
-            '../assets/components/library/amchart/serial.js?v=v1.0.3-rc2',
-            '../assets/components/library/jquery/ochacustom.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/kenyafunding.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
@@ -288,7 +283,16 @@
             </nav>
             <!-- // END navbar -->
             <div class="innerLR">
-                <h3 class="margin-none pull-left">Kenya Funding</h3>
+                <h3 class="margin-none pull-left">Kenya Funding
+                    <span class="pull-right">
+                        <select class="form-control">
+                          <option value="2009">2009</option>
+                          <option value="2010">2010</option>
+                          <option value="2011">2011</option>
+                          <option value="2012">2012</option>
+                        </select>
+                    </span>
+                </h3>
                 
                 <div class="clearfix"></div>
                 <div class="row">
@@ -315,7 +319,7 @@
                 </div>
                 
                 <div class="row">
-                    <div id="chartdiv"></div>
+                    <div id="kenyachartdiv"></div>
                   Funding Breakdown For 2014
                   <div class="col-md-4 pull-left">
                       Breakdown
