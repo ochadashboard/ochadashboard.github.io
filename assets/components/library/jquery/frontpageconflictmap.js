@@ -54,10 +54,14 @@ AmCharts.ready(function() {
 	map.addTitle("source: Various", 11);
 	map.areasSettings = {
 		unlistedAreasColor: "#000000",
-		unlistedAreasAlpha: 0.1
+		unlistedAreasAlpha: 0.1,
+        selectedColor: "#CC0000"
 	};
 	map.imagesSettings.balloonText = "<span style='font-size:14px;'><b>[[title]]</b>: [[value]]</span>";
-
+    
+    map.zoomControl = {
+            zoomControlEnabled:false,
+        };
 	var dataProvider = {
 		mapVar: AmCharts.maps.worldLow,
 		images: []
@@ -78,11 +82,15 @@ AmCharts.ready(function() {
 			type: "circle",
 			width: size,
 			height: size,
+            zoomLevel:15,
+            zoomLongitude:10,
+            zoomLatitude:52,
 			color: dataItem.color,
 			longitude: latlong[id].longitude,
 			latitude: latlong[id].latitude,
 			title: dataItem.name,
-			value: value
+			value: value,
+            areas:[{id:"KE"},{id:"UG"},{id:"SO"}] 
 		});
 	}
 
