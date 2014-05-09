@@ -30,6 +30,7 @@
   min-width: 25px;
     min-height: 25px;
 }
+.list-style-none{list-style-type: none;}
 .widget {
 background: #fff;
 margin: 0 auto 24px;
