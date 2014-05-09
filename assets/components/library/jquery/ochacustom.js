@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    var currentYear = (new Date).getFullYear();
+    $("#year").text( (new Date).getFullYear() );
+    
     $(function() {
         var chart;
         var chart2;
