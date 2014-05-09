@@ -56,15 +56,12 @@ $(function () {
                 }
             },
             series: [{
-                name: 'John',
+                name: 'Met Funding',
                 data: [5, 3, 4, 7, 2]
             }, {
-                name: 'Jane',
+                name: 'Unmet Funding',
                 data: [2, 2, 3, 2, 1]
-            }, {
-                name: 'Joe',
-                data: [3, 4, 4, 2, 5]
-            }]
+            }, ]
         });
     });
 });
