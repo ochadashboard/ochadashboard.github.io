@@ -7,15 +7,15 @@ $(function () {
                 renderTo: 'kenyachartdiv',
             },
             title: {
-                text: 'Stacked column chart'
+                text: 'Funding Trend'
             },
             xAxis: {
-                categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+                categories: ['January', 'February', 'March', 'April', 'May','June','July','August','September','October','November','December']
             },
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Total fruit consumption'
+                    text: 'Funding in million USD'
                 },
                 stackLabels: {
                     enabled: true,
