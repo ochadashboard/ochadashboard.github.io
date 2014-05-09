@@ -20,8 +20,11 @@
 	<link rel="stylesheet/less" href="../assets/less/admin/module.admin.stylesheet-complete.sidebar_type.discover.less" />
 	-->
     <!--[if lt IE 9]><link rel="stylesheet" href="../assets/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
+    <link rel="stylesheet" href="../assets/css/style.css"
+    />
     <link rel="stylesheet" href="../assets/css/admin/module.admin.stylesheet-complete.sidebar_type.discover.min.css"
     />
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,7 +40,8 @@
         core: [
             '../assets/components/library/jquery/jquery.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2',
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
@@ -45,8 +49,11 @@
             '../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
-            '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2',
-            '../assets/components/library/jquery/ochacustom.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            
+            '../assets/components/library/ammap/ammap.js?v=v1.0.3-rc2',
+            '../assets/components/library/amchart/serial.js?v=v1.0.3-rc2',
+            '../assets/components/library/jquery/ochacustom.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/jquery/kenyafunding.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
         plugins: [
@@ -307,6 +314,7 @@
                 </div>
                 
                 <div class="row">
+                    <div id="chartdiv"></div>
                   Funding Breakdown For 2014
                   <div class="col-md-4 pull-left">
                       Breakdown

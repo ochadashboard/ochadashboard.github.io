@@ -39,11 +39,21 @@ box-shadow: none;
 -moz-box-shadow: none;
 -webkit-box-shadow: none;
 }
+#mapdiv{width: 100%;height: 300px;}
 .regional-summary-block{
   min-height: 350px;
 }
 #regional-funding-summary{
  border-right: 1px solid blue;
 }
+.funding-info{
+ min-height: 100px;
+ margin-right: 2px;
+    width: 32.333333%;
+    
+}
 .summary-bottom{}
 .summary-top{}
+#chartdiv{
+    height: 500px;
+    width: 100%;

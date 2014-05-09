@@ -41,7 +41,10 @@
             '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/d3/d3.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/backbone/backbone-min.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            //'../assets/components/library/backbone/backbone-min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/ammap/ammap.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
@@ -49,7 +52,9 @@
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/maps/vector/assets/lib/jquery-jvectormap-1.2.2.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
-            '../assets/components/library/jquery/ochaindex.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/jquery/ochaindex.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/ammap/maps/js/worldLow.js',
+            '../assets/components/library/jquery/frontpageconflictmap.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
         plugins: [
@@ -283,7 +288,7 @@
                 <h2 class="margin-none">Regional Status <div>Today</div>
                 </h2>
                 <div class="alert alert-success">
-                    <p>This is a summary of the humanitarian situation in the region.</p><p> Data has been aggregated from various <a href="sources.html?lang=en">sources.</a></p>
+                    <p>This is a summary of the humanitarian situation in the region.</p><p> Data has been aggregated from various <a href="sources.html?lang=en">sources</a></p>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -298,18 +303,18 @@
                                             <div id="regional-funding-summary" class="pull-left col-md-7">
                                                 Funding Summary
                                                 <div class="summary-top row">
-                                                    <div class="col-md-3 alert alert-primary">Requested Funding</div>
-                                                    <div class="col-md-3 alert alert-success">Met Funding</div>
-                                                    <div class="col-md-3 alert alert-danger">Unmet Funding</div>
+                                                    <div class="col-md-4 alert alert-primary funding-info">Requested Funding</div>
+                                                    <div class="col-md-4 alert alert-success funding-info">Met Funding</div>
+                                                    <div class="col-md-4 alert alert-danger funding-info">Unmet Funding</div>
                                                 </div>
                                                 <div class="summary-bottom row">
-                                                    <div class="col-md-3 alert alert-primary">
+                                                    <div class="col-md-3 alert alert-primary funding-info">
                                                         Countries
                                                     </div>
-                                                    <div class="col-md-3 alert alert-primary">
+                                                    <div class="col-md-3 alert alert-primary funding-info">
                                                         Donors
                                                     </div>
-                                                    <div class="col-md-3 alert alert-primary">
+                                                    <div class="col-md-3 alert alert-primary funding-info">
                                                         Projects
                                                     </div>
                                                 </div>
@@ -323,12 +328,16 @@
                                         <div class="widget-head innerAll half">
                                             <h4 class="margin-none">CONFLICT</h4>
                                         </div>
-                                        <div class="widget-body innerAll">
-                                            Conflict Summary
-                                             Placeholder for conflict summary in the region
-                                            <div>1.2 Million refugees.</div>
-                                            <div>500,000 IDPs</div>
-                                            <div>Latest Conflict News
+                                        <div class="widget-body innerAll row">
+                                            
+                                            <div class="col-md-4">
+                                                <div>1.2 Million refugees.</div>
+                                                <div>500,000 IDPs</div>
+                                            </div>
+                                            
+                                            <div class="col-md-4"><div id="mapdiv"></div></div>
+                                            
+                                            <div class="col-md-4">Latest Conflict News
                                                 <ul>
                                                     <li>LRA attacks villaes in Uganda</li>
                                                     <li>LRA attacks villaes in Uganda</li>
@@ -337,6 +346,7 @@
                                                     <li>LRA attacks villaes in Uganda</li>
                                                 </ul>
                                             </div>
+                                            
                                         </div>
                                    </div>
                                 

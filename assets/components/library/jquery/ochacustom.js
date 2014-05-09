@@ -33,7 +33,7 @@ $(document).ready(function () {
                 innerSize: '40%',
                 showInLegend:true,
                 dataLabels: {
-                    enabled: false
+                    enabled:false
                 }
             }]
         });
@@ -81,5 +81,7 @@ $(document).ready(function () {
             data: [973, 914, 4054, 732]
         }]
     });
+    
+    
 
 });
