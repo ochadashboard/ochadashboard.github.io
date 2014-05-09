@@ -57,4 +57,9 @@ box-shadow: none;
 .summary-top{}
 #chartdiv{
     height: 500px;
+    width: 100%;}
+.country-funding-block{
+    min-height: 150px;
+    height: 200px;
     width: 100%;
+}
