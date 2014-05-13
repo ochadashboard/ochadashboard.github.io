@@ -40,21 +40,23 @@
             '../assets/components/library/jquery/jquery.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/modernizr/modernizr.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/highcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/library/d3/d3.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/d3/d3.min.js',
             //'../assets/components/library/backbone/backbone-min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/ammap/ammap.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            
+            '../assets/components/library/crossfilter/crossfilter.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+                        
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
             '../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/crosslet/js/crosslet-min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/jquery/jquery-migrate.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/modules/admin/maps/vector/assets/lib/jquery-jvectormap-1.2.2.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-            '../assets/components/modules/admin/charts/flot/assets/lib/jquery.flot.js?v=v1.0.3-rc2',
             '../assets/components/library/jquery/ochaindex.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/ammap/maps/js/worldLow.js',
-            '../assets/components/library/jquery/frontpageconflictmap.js?v=v1.0.3-rc2&sv=v0.0.1.1'
+            '../assets/components/library/jquery/frontpageconflictmap.js?v=v1.0.3-rc2&sv=v0.0.1.1',
+            '../assets/components/library/ocha/ochacrosslet.js?v=v1.0.3-rc2&sv=v0.0.1.1'
         ],
         /* PLUGINS always load after CORE and PLUGINS_DEPENDENCY, but before the BUNDLE / initialization scripts; */
         plugins: [
@@ -303,9 +305,18 @@
                                             <div id="regional-funding-summary" class="pull-left col-md-7">
                                                 Funding Summary
                                                 <div class="summary-top row">
-                                                    <div class="col-md-4 alert alert-primary funding-info">Requested Funding</div>
-                                                    <div class="col-md-4 alert alert-success funding-info">Met Funding</div>
-                                                    <div class="col-md-4 alert alert-danger funding-info">Unmet Funding</div>
+                                                    <div class="col-md-4 alert alert-primary funding-info">
+                                                        Requested Funding
+                                                        1.2B
+                                                    </div>
+                                                    <div class="col-md-4 alert alert-success funding-info">
+                                                        Met Funding
+                                                        300M
+                                                    </div>
+                                                    <div class="col-md-4 alert alert-danger funding-info">
+                                                        Unmet Funding
+                                                        0.9B
+                                                    </div>
                                                 </div>
                                                 <div class="summary-bottom row">
                                                     <div class="col-md-3 alert alert-primary funding-info">
@@ -633,7 +644,9 @@
                         </div>
                         <!-- //End Widget -->
                         
-                        
+                        <div class="row">
+                            <div id="fundingmap"></div>
+                        </div>
                         <!-- //End Widget -->
                     </div>
                     <!-- //End Col -->
