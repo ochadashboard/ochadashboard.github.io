@@ -331,7 +331,20 @@
                                                 <div class="alert alert-primary"><a href="refugees.html" class="white-link">1.2 Million refugees.</a></div>
                                                 <div class="alert alert-primary">500,000 IDPs</div>
                                                 <div class="alert alert-primary">50 incidents reported in past one month</div>
-												<div class="conflict-trends"></div>
+												<div class="widget widget-tabs widget-tabs-double-2 border-bottom conflict-trends">
+													<ul class="nav nav-tabs">
+													  <li class="active"><a href="#conflicthome" data-toggle="tab">Summary</a></li>
+													  <li><a href="#conflictchart" data-toggle="tab">Charts</a></li>
+													  
+													</ul>
+
+													<!-- Tab panes -->
+													<div class="tab-content">
+													  <div class="tab-pane active" id="conflicthome">Charts</div>
+													  <div class="tab-pane" id="conflictchart">...</div>
+													  
+													</div>
+												</div>
                                             </div>
                                             
                                             <div class="col-md-4"><div id="mapdiv"></div></div>
@@ -406,54 +419,7 @@
                         </div>
                         <!-- //Row -->
 
-                        <div class="col-md-6">
-                                <div class="widget widget-tabs widget-tabs-double-2 border-bottom widget-tabs-responsive">
-                                    <div class="widget-body">
-                                        <div class="tab-content">
-                                            <!-- Tab content -->
-                                            <div id="tabReports" class="tab-pane active widget-body-regular innerAll inner-2x text-center">
-                                                <div data-percent="85" data-size="95" class="easy-pie inline-block primary" data-scale-color="false"
-                                                data-track-color="#efefef" data-line-width="8">
-                                                    <div class="value text-center">
-                                                        <span class="strong"><i class="icon-graph-up-1 fa-3x text-primary"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- // Tab content END -->
-                                            <!-- Tab content -->
-                                            <div id="tabIncome" class="tab-pane widget-body-regular innerAll inner-2x text-center">
-                                                10 countries
-                                            </div>
-                                            <!-- // Tab content END -->
-                                            <!-- Tab content -->
-                                            <div id="tabAccounts" class="tab-pane widget-body-regular innerAll inner-2x text-center">
-                                                
-                                            </div>
-                                            <!-- // Tab content END -->
-                                        </div>
-                                    </div>
-                                    <!-- Tabs Heading -->
-                                    <div class="widget-head border-top-none bg-gray">
-                                        <ul>
-                                            <li class="active"><a class="glyphicons notes" href="#tabReports"
-                                                data-toggle="tab"><i></i><span>Reports</span></a>
-                                            </li>
-                                            <li><a class="glyphicons credit_card" href="#tabIncome"
-                                                data-toggle="tab"><i></i><span>Income</span></a>
-                                            </li>
-                                            <li><a class="glyphicons user" href="#tabAccounts"
-                                                data-toggle="tab"><i></i><span>Accounts</span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- // Tabs Heading END -->
-                                </div>
-                                <!-- //Widget -->
-                            </div>
-                            <!-- //Col -->
-
-                        
+                                    
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="widget">
