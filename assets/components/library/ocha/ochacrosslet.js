@@ -1,5 +1,11 @@
-var axisf=function(){ return function(d){return Math.round(d*10)/10+"%";}};
-var yearsf =function(){ return Math.round};
+var axisf = function () {
+    return function (d) {
+        return Math.round(d * 10) / 10 + "%";
+	}
+};
+var yearsf = function (){ 
+    return Math.round
+};
 
 var config = {
   map: {
@@ -12,7 +18,7 @@ var config = {
       zoom: 2
     },
     geo: {
-      url: "examples/world/data/world.topo.json",
+      url: "assets/mapping/world.topo.json",
       name_field: "NAME",
       id_field: "NAME",
       topo_object: "world"
@@ -24,10 +30,10 @@ var config = {
   },
   dimensions: {
     corruption: {
-      title: "Corruption index",
+      title: "Funding Index",
       data: {
         colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
-        dataSet: "examples/world/data/data.tsv",
+        dataSet: "assets/mapping/data.tsv",
         field: "corruption",
 
       },
@@ -42,7 +48,7 @@ var config = {
       title: "GDP per capita, $",
       data: {
         colorscale: d3.scale.linear().domain([1, 10, 20]).range([ "red", "yellow","green"]).interpolate(d3.cie.interpolateLab),
-        dataSet: "examples/world/data/data.tsv",
+        dataSet: "assets/mapping/data.tsv",
         field: "gdp",
         exponent:0.4,
         ticks: [2000,10000,25000,50000,80000]

@@ -45,7 +45,7 @@
             '../assets/components/library/ammap/ammap.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/amchart/amcharts.js?v=v1.0.3-rc2&sv=v0.0.1.1',
             '../assets/components/library/crossfilter/crossfilter.min.js?v=v1.0.3-rc2&sv=v0.0.1.1',
-                        
+            '../assets/components/library/leaflet/leaflet.js',            
         ],
         /* PLUGINS_DEPENDENCY always load after CORE but before PLUGINS; */
         plugins_dependency: [
@@ -306,15 +306,15 @@
                                                 Funding Summary
                                                 <div class="summary-top row">
                                                     <div class="col-md-4 alert alert-primary funding-info">
-                                                        Requested Funding
+                                                        <h3 class="funding-title-class">Requested Funding</h3>
                                                         1.2B
                                                     </div>
                                                     <div class="col-md-4 alert alert-success funding-info">
-                                                        Met Funding
+                                                        <h3 class="funding-title-class">Met Funding</h3>
                                                         300M
                                                     </div>
                                                     <div class="col-md-4 alert alert-danger funding-info">
-                                                        Unmet Funding
+                                                        <h3 class="funding-title-class">Unmet Funding</h3>
                                                         0.9B
                                                     </div>
                                                 </div>
@@ -342,7 +342,7 @@
                                         <div class="widget-body innerAll row">
                                             
                                             <div class="col-md-4">
-                                                <div class="alert alert-primary">1.2 Million refugees.</div>
+                                                <div class="alert alert-primary"><a href="refugees.html" class="white-link">1.2 Million refugees.</a></div>
                                                 <div class="alert alert-primary">500,000 IDPs</div>
                                                 <div class="alert alert-primary">50 incidents reported in pat one month</div>
                                             </div>
