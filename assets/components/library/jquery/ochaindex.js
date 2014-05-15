@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var indexchart2;
+    var donorbarchart;
     indexchart2 = new Highcharts.Chart({
             chart: {
                 renderTo: 'regionaltrends',
@@ -37,4 +38,61 @@ $(document).ready(function () {
                 }
             }]
         });
+
+    var donorbarchart = new Highcharts.Chart({
+        chart: {
+                type: 'bar',
+                renderTo: 'regionalclustertrends',
+            },
+            title: {
+                text: 'Cluster Funding'
+            },
+            subtitle: {
+                text: 'Source: Wikipedia.org'
+            },
+            xAxis: {
+                categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Population (millions)',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' millions'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+               data: [107, 31, 635, 203, 2]
+            },]
+        
+    });
 });
