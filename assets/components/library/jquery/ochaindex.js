@@ -2,6 +2,8 @@ $(document).ready(function () {
     var indexchart2;
     var donorbarchart;
     var clusterpercentages;
+    var donorfundingchart;
+
     indexchart2 = new Highcharts.Chart({
             chart: {
                 renderTo: 'regionaltrends',
@@ -157,7 +159,7 @@ $(document).ready(function () {
    var donorfundingchart = new Highcharts.Chart({
         chart: {
                 type: 'bar',
-                renderTo: 'regionalclustertrends',
+                renderTo: 'regionaldonortrends',
             },
             title: {
                 text: 'Cluster Funding by (million $)'
