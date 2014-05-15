@@ -162,7 +162,7 @@ $(document).ready(function () {
                 renderTo: 'regionaldonortrends',
             },
             title: {
-                text: 'Cluster Funding by (million $)'
+                text: 'Donor Contribution in (million $)'
             },
             subtitle: {
                 text: 'Source: fts.unocha.org'
@@ -222,7 +222,7 @@ $(document).ready(function () {
             },
             series: [{
                data: [
-               107, 31, 635, 203, 2, 65, 65, 65, 65, 65, 65, 65, 65]
+               840, 800, 635, 403, 312, 265, 265, 193, 165, 124, 65, 33, 0.7]
             },]
         
     });
