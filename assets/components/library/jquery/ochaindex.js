@@ -168,7 +168,20 @@ $(document).ready(function () {
                 text: 'Source: fts.unocha.org'
             },
             xAxis: {
-                categories: ['Education', 'Health', 'Food security', 'Protection', 'Shelter'],
+                categories: [
+                'United States', 
+                'United Kingdom', 
+                'European Commission', 
+                'Japan', 
+                'Denmark',
+                'Canada',
+                'Others',
+                'Sweden',
+                'Germany',
+                'Ireland',
+                'Norway',
+                'Switzerland',
+                'Carry-Over'],
                 title: {
                     text: null
                 }
@@ -208,7 +221,8 @@ $(document).ready(function () {
                 enabled: false
             },
             series: [{
-               data: [107, 31, 635, 203, 2]
+               data: [
+               107, 31, 635, 203, 2, 65, 65, 65, 65, 65, 65, 65, 65]
             },]
         
     });
