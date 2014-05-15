@@ -48,10 +48,10 @@ $(document).ready(function () {
                 text: 'Cluster Funding'
             },
             subtitle: {
-                text: 'Source: Wikipedia.org'
+                text: 'Source: fts.unocha.org'
             },
             xAxis: {
-                categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+                categories: ['Education', 'Health', 'Food security', 'Protection', 'Shelter'],
                 title: {
                     text: null
                 }
