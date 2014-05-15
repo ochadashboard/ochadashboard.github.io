@@ -217,6 +217,7 @@ $(document).ready(function () {
                 backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'),
                 shadow: true
             },
+            color: '#0066FF',
             credits: {
                 enabled: false
             },
