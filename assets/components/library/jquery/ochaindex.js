@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var indexchart2;
     var donorbarchart;
+    var clusterpercentages;
     indexchart2 = new Highcharts.Chart({
             chart: {
                 renderTo: 'regionaltrends',
@@ -45,7 +46,121 @@ $(document).ready(function () {
                 renderTo: 'regionalclustertrends',
             },
             title: {
-                text: 'Cluster Funding'
+                text: 'Cluster Funding by (million $)'
+            },
+            subtitle: {
+                text: 'Source: fts.unocha.org'
+            },
+            xAxis: {
+                categories: ['Education', 'Health', 'Food security', 'Protection', 'Shelter'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Population (millions)',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' millions'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+               data: [107, 31, 635, 203, 2]
+            },]
+        
+    });
+
+   var clusterpercentages = new Highcharts.Chart({
+        chart: {
+                type: 'bar',
+                renderTo: 'regionalclusterpercentages',
+            },
+            title: {
+                text: 'Cluster Funding by (million $)'
+            },
+            subtitle: {
+                text: 'Source: fts.unocha.org'
+            },
+            xAxis: {
+                categories: ['Education', 'Health', 'Food security', 'Protection', 'Shelter'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Population (millions)',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' millions'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+               data: [107, 31, 635, 203, 2]
+            },]
+        
+    });
+
+   var donorfundingchart = new Highcharts.Chart({
+        chart: {
+                type: 'bar',
+                renderTo: 'regionalclustertrends',
+            },
+            title: {
+                text: 'Cluster Funding by (million $)'
             },
             subtitle: {
                 text: 'Source: fts.unocha.org'
