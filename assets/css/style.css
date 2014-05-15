@@ -72,3 +72,7 @@ box-shadow: none;
 #fundingmap{
     height: 550px;
 width: 100%;}
+span.funding-figure {
+	font-size: 5.2em;
+	font-weight: bold;
+}
