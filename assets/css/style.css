@@ -47,6 +47,7 @@ box-shadow: none;
 .funding-title-class{
   border-bottom: 1px solid #fff;
 	padding-bottom: 5px;
+	min-height: 60px;
 }
 .white-link{color: #ffffff;}
 #regional-funding-summary{
