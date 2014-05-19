@@ -440,42 +440,46 @@
             });
         });
 
-        /* Highcharts */
-        var chart = new Highcharts.Chart({
-    
-            chart: {
-                type: 'column',
-                renderTo: 'fundingcontainer',
-                
+        /* Morris charts */
+        Morris.Bar({
+            element: 'fundingcontainer',
+            data: [{
+                country: 'Kenya',
+                a: 100,
+                b: 90
+            }, {
+                country: 'Uganda',
+                a: 75,
+                b: 65
+            }, {
+                country: 'Somalia',
+                a: 50,
+                b: 40
+            }, {
+                country: 'Sudan',
+                a: 75,
+                b: 65
+            }, {
+                country: 'Burundu',
+                a: 50,
+                b: 40
+            }, {
+                country: 'Ethiopia',
+                a: 75,
+                b: 65
+            }, {
+                country: 'South Sudan',
+                a: 100,
+                b: 90
+            }],
+            hoverCallback: function(index, options, content) {
+              return(content);
             },
-            credits:false,
-        
-            xAxis: {
-                categories: ['KE', 'SSD', 'SOM','SUD','UG','ETH','DJ']
-            },
-            
-            plotOptions: {
-                series: {
-                    stacking: 'normal'
-                 },
-                
-             },    
-        
-            series: [
-                {
-                    name: 'Met Funding',
-                    data: [10, 20, 30,40,60,115,25],
-                    index:1,
-                    legendIndex:0
-                },
-                {
-                    name: 'Unmet Funding',
-                    data: [30, 20, 10,10,80,25,25],
-                    index:0,
-                    legendIndex:1
-                }
-            ]
-        });   
+            xkey: 'country',
+            ykeys: ['a', 'b'],
+            stacked: true,
+            labels: ['Unfunded', 'Funded']
+        }); 
 
 
 

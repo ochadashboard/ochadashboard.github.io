@@ -5717,3 +5717,8 @@ right: -1px;
     -o-transition: none;
     transition: none;
 }
+
+/*ocha*/
+.ocha-top{height: 210px; max-height: 210px; overflow: hidden;}
+#fundingcontainer{height: 180px;}
+.ocha-introduction{clear: both;margin-bottom: 10px;}
