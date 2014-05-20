@@ -5083,11 +5083,14 @@ div.tagsinput span.tag {
 }
 .mini-stat {
     background:#fff;
-    padding:20px;
+    padding:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
     margin-bottom:20px;
+    height: 130px;
+    max-height: 130px;
+    overflow: hidden;
 }
 .mini-stat-icon {
     width:60px;
@@ -5102,15 +5105,18 @@ div.tagsinput span.tag {
     border-radius:100%;
     float:left;
     margin-right:10px;
+    margin-top: 30px;
     color:#fff;
 }
 .mini-stat-info {
     font-size:12px;
     padding-top:2px;
+    float: right;
+    width: 70%;
 }
 .mini-stat-info span {
     display:block;
-    font-size:24px;
+    font-size:20px;
     font-weight:600;
 }
 .orange {
