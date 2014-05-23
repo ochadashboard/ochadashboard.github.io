@@ -63,7 +63,10 @@ var nutritionvalues = [100.00,100.00,100.00,80.00,80.00,66.67];
 // Draw a sparkline for the #sparkline element
 $('#nutritionsparkline').sparkline(nutritionvalues, {
     type: "bar",
-    tooltipFormat: '{{offset:offset}} {{value}}',
+    barColor:"#f6b0ae",
+    height: 40,
+    barWidth: 5,
+    tooltipFormat: '{{offset:offset}} : ${{value}}',
     tooltipValueLookups: {
         'offset': {
             0: 'Jul',
