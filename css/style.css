@@ -5733,7 +5733,7 @@ span.in-need {
     color: white;
 }
 #donorcontainer {
-height: 300px;
+min-width: 310px; max-width: 320px; height: 300px; margin: 0 auto
 }
 span.in-need p{
     font-size: 0.7em;
