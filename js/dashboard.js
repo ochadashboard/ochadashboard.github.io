@@ -195,61 +195,61 @@
                 data: [{
                     period: '2010 Q1',
                     refugees: 10,
-                    ipad: 10,
-                    itouch: 10
+                    IDPS: 10,
+                    Food Insecure: 10
                 }, {
                     period: '2010 Q2',
                     refugees: 1778,
-                    ipad: 7294,
-                    itouch: 18441
+                    IDPS: 7294,
+                    Food Insecure: 18441
                 }, {
                     period: '2010 Q3',
                     refugees: 4912,
-                    ipad: 12969,
-                    itouch: 3501
+                    IDPS: 12969,
+                    Food Insecure: 3501
                 }, {
                     period: '2010 Q4',
                     refugees: 3767,
-                    ipad: 3597,
-                    itouch: 5689
+                    IDPS: 3597,
+                    Food Insecure: 5689
                 }, {
                     period: '2011 Q1',
                     refugees: 6810,
-                    ipad: 1914,
-                    itouch: 2293
+                    IDPS: 1914,
+                    Food Insecure: 2293
                 }, {
                     period: '2011 Q2',
                     refugees: 5670,
-                    ipad: 4293,
-                    itouch: 1881
+                    IDPS: 4293,
+                    Food Insecure: 1881
                 }, {
                     period: '2011 Q3',
                     refugees: 4820,
-                    ipad: 3795,
-                    itouch: 1588
+                    IDPS: 3795,
+                    Food Insecure: 1588
                 }, {
                     period: '2011 Q4',
                     refugees: 25073,
-                    ipad: 5967,
-                    itouch: 5175
+                    IDPS: 5967,
+                    Food Insecure: 5175
                 }, {
                     period: '2012 Q1',
                     refugees: 10687,
-                    ipad: 34460,
-                    itouch: 22028
+                    IDPS: 34460,
+                    Food Insecure: 22028
                 }, {
                     period: '2012 Q2',
                     refugees: 1000,
-                    ipad: 5713,
-                    itouch: 1791
+                    IDPS: 5713,
+                    Food Insecure: 1791
                 }
 
 
                 ],
                 lineColors: ['#ED5D5D', '#D6D23A', '#32D2C9'],
                 xkey: 'period',
-                ykeys: ['refugees', 'ipad', 'itouch'],
-                labels: ['refugees', 'iPad', 'iPod Touch'],
+                ykeys: ['refugees', 'IDPS', 'Food Insecure'],
+                labels: ['refugees', 'IDPS', 'iPod Touch'],
                 pointSize: 0,
                 lineWidth: 0,
                 hideHover: 'auto'
