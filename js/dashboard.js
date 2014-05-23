@@ -196,60 +196,60 @@
                     period: '2010 Q1',
                     refugees: 10,
                     IDPS: 10,
-                    Food Insecure: 10
+                    FoodInsecure: 10
                 }, {
                     period: '2010 Q2',
                     refugees: 1778,
                     IDPS: 7294,
-                    Food Insecure: 18441
+                    FoodInsecure: 18441
                 }, {
                     period: '2010 Q3',
                     refugees: 4912,
                     IDPS: 12969,
-                    Food Insecure: 3501
+                    FoodInsecure: 3501
                 }, {
                     period: '2010 Q4',
                     refugees: 3767,
                     IDPS: 3597,
-                    Food Insecure: 5689
+                    FoodInsecure: 5689
                 }, {
                     period: '2011 Q1',
                     refugees: 6810,
                     IDPS: 1914,
-                    Food Insecure: 2293
+                    FoodInsecure: 2293
                 }, {
                     period: '2011 Q2',
                     refugees: 5670,
                     IDPS: 4293,
-                    Food Insecure: 1881
+                    FoodInsecure: 1881
                 }, {
                     period: '2011 Q3',
                     refugees: 4820,
                     IDPS: 3795,
-                    Food Insecure: 1588
+                    FoodInsecure: 1588
                 }, {
                     period: '2011 Q4',
                     refugees: 25073,
                     IDPS: 5967,
-                    Food Insecure: 5175
+                    FoodInsecure: 5175
                 }, {
                     period: '2012 Q1',
                     refugees: 10687,
                     IDPS: 34460,
-                    Food Insecure: 22028
+                    FoodInsecure: 22028
                 }, {
                     period: '2012 Q2',
                     refugees: 1000,
                     IDPS: 5713,
-                    Food Insecure: 1791
+                    FoodInsecure: 1791
                 }
 
 
                 ],
                 lineColors: ['#ED5D5D', '#D6D23A', '#32D2C9'],
                 xkey: 'period',
-                ykeys: ['refugees', 'IDPS', 'Food Insecure'],
-                labels: ['refugees', 'IDPS', 'iPod Touch'],
+                ykeys: ['refugees', 'IDPS', 'FoodInsecure'],
+                labels: ['refugees', 'IDPS', 'FoodInsecure'],
                 pointSize: 0,
                 lineWidth: 0,
                 hideHover: 'auto'
