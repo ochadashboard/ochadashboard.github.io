@@ -56,5 +56,25 @@ $(document).ready(function(){
       "format": 'png'     
       }]  
     }
+});//end donor charts
+
+var nutritionvalues = [100.00,100.00,100.00,80.00,80.00,66.67];
+
+// Draw a sparkline for the #sparkline element
+$('#nutritionsparkline').sparkline(nutritionvalues, {
+    type: "bar",
+    tooltipFormat: '{{offset:offset}} {{value}}',
+    tooltipValueLookups: {
+        'offset': {
+            0: 'Jul',
+            1: 'Aug',
+            2: 'Sep',
+            3: 'Oct',
+            4: 'Nov',
+            5: 'Dev',
+        }
+    },
 });
+
+
 });
