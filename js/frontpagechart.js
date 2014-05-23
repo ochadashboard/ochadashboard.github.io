@@ -58,23 +58,23 @@ $(document).ready(function(){
     }
 });//end donor charts
 
-var nutritionvalues = [100.00,100.00,100.00,80.00,80.00,66.67];
+var nutritionvalues = [1,2.3,0.97,1.6,1.4,1.87];
 
 // Draw a sparkline for the #sparkline element
 $('#nutritionsparkline').sparkline(nutritionvalues, {
     type: "bar",
     barColor:"#f6b0ae",
     height: 40,
-    barWidth: 5,
+    barWidth: 10,
     tooltipFormat: '{{offset:offset}} : ${{value}}',
     tooltipValueLookups: {
         'offset': {
-            0: 'Jul',
-            1: 'Aug',
-            2: 'Sep',
-            3: 'Oct',
-            4: 'Nov',
-            5: 'Dev',
+            0: '2009',
+            1: '2010',
+            2: '2011',
+            3: '2012',
+            4: '2013',
+            5: '2014',
         }
     },
 });
