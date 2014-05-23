@@ -5751,3 +5751,6 @@ min-height: 240px;
 max-height: 245px;
 overflow: hidden;
 }
+div#clusterdiv {
+min-height: 300px;
+}
