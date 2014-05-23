@@ -5729,8 +5729,7 @@ right: -1px;
 #fundingcontainer{height: 180px;}
 .ocha-introduction{clear: both;margin-bottom: 10px;}
 span.in-need {
-    background: #ff6c60;
-    color: white;
+     color: #ff6c60;
 }
 #donorcontainer {
 min-width: 310px; max-width: 320px; height: 300px; margin: 0 auto
