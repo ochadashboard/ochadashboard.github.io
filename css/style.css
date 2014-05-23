@@ -5735,3 +5735,7 @@ span.in-need {
 #donorcontainer {
 height: 300px;
 }
+span.in-need p{
+    font-size: 0.7em;
+    margin-bottom: 0;
+}
