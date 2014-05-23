@@ -2,6 +2,7 @@ $(document).ready(function(){
   var chart = AmCharts.makeChart("donorcontainer", {
     "type": "serial",
     "theme": "none",
+    "rotate": true,
     "dataProvider": [{
         "country": "USA",
         "visits": 2025
@@ -23,25 +24,7 @@ $(document).ready(function(){
     }, {
         "country": "India",
         "visits": 984
-    }, {
-        "country": "Spain",
-        "visits": 711
-    }, {
-        "country": "Netherlands",
-        "visits": 665
-    }, {
-        "country": "Russia",
-        "visits": 580
-    }, {
-        "country": "South Korea",
-        "visits": 443
-    }, {
-        "country": "Canada",
-        "visits": 441
-    }, {
-        "country": "Brazil",
-        "visits": 395
-    }],
+    },],
     "valueAxes": [{
         "gridColor":"#FFFFFF",
         "gridAlpha": 0.2,
