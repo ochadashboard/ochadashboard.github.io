@@ -5112,7 +5112,7 @@ div.tagsinput span.tag {
     font-size:12px;
     padding-top:2px;
     float: right;
-    width: 70%;
+    width: 68%;
 }
 .mini-stat-info span {
     display:block;
@@ -5741,4 +5741,9 @@ min-width: 310px; max-width: 320px; height: 300px; margin: 0 auto
 span.in-need p{
     font-size: 0.7em;
     margin-bottom: 0;
+}
+.ocha-top .panel {
+min-height: 240px;
+max-height: 245px;
+overflow: hidden;
 }
