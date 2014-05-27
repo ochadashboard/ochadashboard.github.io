@@ -475,6 +475,7 @@
             hoverCallback: function(index, options, content) {
               return(content);
             },
+            hideHover: 'auto',
             xkey: 'country',
             ykeys: ['a', 'b'],
             stacked: true,

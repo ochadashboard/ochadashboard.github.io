@@ -5726,7 +5726,7 @@ right: -1px;
 
 /*ocha*/
 .ocha-top{height: 210px; max-height: 210px; overflow: hidden;}
-#fundingcontainer{height: 180px;}
+#fundingcontainer{height: 180px;width: 100%;}
 .ocha-introduction{clear: both;margin-bottom: 10px;}
 span.in-need {
      color: #ff6c60;
