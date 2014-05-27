@@ -181,6 +181,45 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
     
     });
 
+//Morris Displacement Chart
+        Morris.Line({
+          element: 'displacement_line_chart',
+          data: [
+            { 
+              y: '2006', 
+              refugees: 20  
+            },
+            { 
+              y: '2007', 
+              refugees: 75   
+            },
+            { 
+              y: '2008', 
+              refugees: 50   
+            },
+            { 
+              y: '2009', 
+              refugees: 75   
+            },
+            { 
+              y: '2010', 
+              refugees: 50 
+            },
+            { 
+              y: '2011', 
+              refugees: 75   
+            },
+            { 
+              y: '2012', 
+              refugees: 10 
+            }
+          ],
+          hideHover: 'auto',
+          xkey: 'y',
+          ykeys: ['refugees'],
+          labels: ['Refugees']
+        });
+
 
 
 
