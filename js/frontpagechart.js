@@ -221,14 +221,33 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
         });
 
     //Morris Donut
-    /*Morris.Donut({
-      element: 'donut-example',
+    Morris.Donut({
+    element: 'sm-pie',
       data: [
-        {label: "Download Sales", value: 12},
-        {label: "In-Store Sales", value: 30},
-        {label: "Mail-Order Sales", value: 20}
-      ]
-    });*/
+        {
+          label: "Kenya", 
+          value: 12,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Uganda", 
+          value: 30,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Burundi", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Burundi", 
+          value: 20,
+          formatted: 'at least 70%'
+        }
+      ],
+      colors: ['#0BA462','#750f14','#e42f38','#95D7BB'],
+      formatter: function (x, data) { return data.formatted; }
+    });
 
 
 

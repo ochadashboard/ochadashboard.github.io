@@ -104,7 +104,7 @@
 
 
             // DONUT
-            var dataPie = [{
+            /*var dataPie = [{
                 label: "Kenya",
                 data: 50
             }, {
@@ -113,9 +113,9 @@
             }, {
                 label: "Somalia",
                 data: 100
-            }];
+            }];*/
 
-            $.plot($(".sm-pie"), dataPie, {
+            /*$.plot($(".sm-pie"), dataPie, {
                 series: {
                     pie: {
                         innerRadius: 0.7,
@@ -137,7 +137,7 @@
                 },
 
                 colors: ["#ffdf7c", "#b2def7", "#efb3e6"]
-            });
+            });*/
 
         }
 

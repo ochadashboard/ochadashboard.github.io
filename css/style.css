@@ -4635,10 +4635,10 @@ div.tagsinput span.tag {
     min-height:164px;
 }
 .top-stats-panel .sm-pie {
-    margin-top:30px;
+    margin-top:5px;
 }
 .sm-pie {
-    height:100px;
+    height:163px;
     width:100%;
     display:block;
 }
