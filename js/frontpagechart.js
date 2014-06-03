@@ -250,7 +250,7 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
     });
 
     $("#f_security_explain").click(function(){
-        var some_html = '<img src="images/bootstrap_logo.png" width="100px"/><br />';
+        var some_html = '<span class="icon-cluster_nutrition bootbox_icon"></span>';
         some_html += '<h2>You can use custom HTML too!</h2><br />';
         some_html += '<h4>Just be sure to mind your quote marks</h4>';
         bootbox.alert(some_html);
