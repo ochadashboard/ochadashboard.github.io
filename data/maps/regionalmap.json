@@ -1,7 +1,7 @@
 {
 	"type":"Topology",
 	"objects":{
-		"regionalmap8":{
+		"regionalmap":{
 			"bbox":[21.809448690000124,-4.677504164999959,51.41703781100014,22.223760885],
 			"type":"GeometryCollection",
 			"geometries":[
