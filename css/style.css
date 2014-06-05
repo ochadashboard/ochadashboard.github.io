@@ -5759,9 +5759,8 @@ min-height: 300px;
 span#f_security_explain {
 margin-left: 4px;
 color: red;
-border: 1px solid red;
-border-radius: 50%;
 padding: 2px;
+cursor: pointer;
 }
 .bootbox_icon {
 font-size: 5em;
