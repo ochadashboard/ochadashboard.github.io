@@ -300,6 +300,13 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
         some_html += '<h4>The data is updated when FTS updates and therefore keeps a correct record of all funding data.</h4>';
         bootbox.alert(some_html);
     });
+    $("#f_displacementchart_explain").click(function(){
+        var some_html = '<span class="crisis_population_displacement bootbox_icon"></span>';
+        some_html += '<h2>Displacement Data</h2><br />';
+        some_html += '<h4>This data is obtained from UNHCR API</h4>';
+        some_html += '<h4>The data is updated when FTS updates and therefore keeps a correct record of all funding data.</h4>';
+        bootbox.alert(some_html);
+    });
 
 
 
