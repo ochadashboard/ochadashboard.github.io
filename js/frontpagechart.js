@@ -240,19 +240,64 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
           formatted: 'at least 70%'
         },
         {
-          label: "Burundi", 
+          label: "Rwanda", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Eritrea", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Ethiopia", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Somalia", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Sudan", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "South Sudan", 
+          value: 20,
+          formatted: 'at least 70%'
+        },
+        {
+          label: "Djibouti", 
           value: 20,
           formatted: 'at least 70%'
         }
       ],
-      colors: ['#0BA462','#750f14','#e42f38','#95D7BB'],
+      colors: ['#0a7672','#1Fb5af','#338885','#53DAD5','#77dad6','#315FC0','#10337D','#405a90','#43a43e','#138e0c'],
       formatter: function (x, data) { return data.formatted; }
     });
 
+    ///Bootbox popup
     $("#f_security_explain").click(function(){
         var some_html = '<span class="icon-cluster_nutrition bootbox_icon"></span>';
-        some_html += '<h2>You can use custom HTML too!</h2><br />';
-        some_html += '<h4>Just be sure to mind your quote marks</h4>';
+        some_html += '<h2>Food Security Data</h2><br />';
+        some_html += '<h4>This data is obtained from UNICEF</h4>';
+        bootbox.alert(some_html);
+    });
+    $("#f_nutritionpie_explain").click(function(){
+        var some_html = '<span class="icon-cluster_nutrition bootbox_icon"></span>';
+        some_html += '<h2>Nutrition Data</h2><br />';
+        some_html += '<h4>This data is obtained from UNICEF and other partners</h4>';
+        some_html += '<h4>The pie chart represents acute malnutrition percentages per country</h4>';
+        bootbox.alert(some_html);
+    });
+    $("#f_fundingchart_explain").click(function(){
+        var some_html = '<span class="icon-cluster_nutrition bootbox_icon"></span>';
+        some_html += '<h2>Nutrition Data</h2><br />';
+        some_html += '<h4>This data is obtained from FTS API at fts.unocha.org</h4>';
+        some_html += '<h4>The data is updated when FTS updates and therefore keeps a correct record of all funding data.</h4>';
         bootbox.alert(some_html);
     });
 
