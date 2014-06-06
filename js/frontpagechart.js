@@ -295,7 +295,7 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
     });
     $("#f_fundingchart_explain").click(function(){
         var some_html = '<span class="icon-activity_fund bootbox_icon"></span>';
-        some_html += '<h2>Nutrition Data</h2><br />';
+        some_html += '<h2>Funding Data</h2><br />';
         some_html += '<h4>This data is obtained from FTS API at fts.unocha.org</h4>';
         some_html += '<h4>The data is updated when FTS updates and therefore keeps a correct record of all funding data.</h4>';
         bootbox.alert(some_html);
