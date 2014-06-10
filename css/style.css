@@ -4634,6 +4634,9 @@ div.tagsinput span.tag {
 .top-stats-panel {
     min-height:164px;
 }
+.top-stats-panel text[text-anchor="middle"] {
+display: none;
+}
 .top-stats-panel .sm-pie {
     margin-top:5px;
 }
