@@ -1,6 +1,5 @@
-map = new L.map('regionalsummarymap');
 
-var regionalMap = 
+/*var regionalMap = 
 {
   "bbox":[21.809448690000124,-4.677504164999959,51.41703781100014,22.223760885],
   "type":"FeatureCollection",
@@ -37,10 +36,9 @@ var regionalMap =
 
 osmTile = "http://tile.openstreetmap.org/{z}/{x}/{y}.png";
 osmCopyright = "Map data &copy; 2012 OpenStreetMap contributors";
-osmLayer = new L.TileLayer(osmTile, { maxZoom: 18, attribution: osmCopyright } );
+
 map.addLayer(osmLayer);
 
-L.geoJson(regionalMap).addTo(map);
 
 
-
+*/

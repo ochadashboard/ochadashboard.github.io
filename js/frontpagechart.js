@@ -182,7 +182,7 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
     });
 
 //Morris Displacement Chart
-        Morris.Line({
+        /*Morris.Line({
           element: 'displacement_line_chart',
           data: [
             { 
@@ -218,7 +218,7 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
           xkey: 'y',
           ykeys: ['refugees'],
           labels: ['Refugees']
-        });
+        });*/
 
     //Morris Donut
     Morris.Donut({
