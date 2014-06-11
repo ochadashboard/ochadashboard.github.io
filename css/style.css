@@ -523,7 +523,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     font-size:11px;
 }
 .top-nav {
-    margin-top:20px;
+    margin-top:0px;
 }
 .top-nav img {
     border-radius:50%;
@@ -5774,4 +5774,10 @@ span.bootbox_explain{
 color: red;
 padding: 2px;
 cursor: pointer;
+}
+.page_intro{
+    font-size: 2em;
+    margin-top: 21px;
+    width: 50%;
+    float: left;
 }
