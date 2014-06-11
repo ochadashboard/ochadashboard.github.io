@@ -4543,12 +4543,13 @@ div.tagsinput span.tag {
     color:#fa8564;
     font-size:16px;
     font-weight:bold;
-    padding-left:20px;
+    padding-left:0px;
 }
 .gauge-title {
     color:#ccc;
-    font-size:14px;
+    font-size:10px;
     padding-right:0px;
+    width: 95px;
 }
 .gauge-meta {
     margin:0px;
@@ -5780,4 +5781,35 @@ cursor: pointer;
     margin-top: 21px;
     width: 50%;
     float: left;
+}
+.gauge-title ul li{
+    list-style-type: none;
+}
+.gauge-title li span{
+    display: block;
+}
+.gauge-title ul{
+}
+.legend_title{
+    margin-bottom: 0;
+    border-bottom: 1px solid;
+}
+li.secured_food {
+color: #fa8564;
+}
+div.float_left {
+float: left;
+width: 45%;
+overflow: hidden;
+text-transform: uppercase;
+padding-top: 20px;
+padding-left: 40px;
+}
+div.float_right {
+float: right;
+padding-right: 5px;
+width: 40%;
+color: purple;
+font-weight: bold;
+font-size: 4em;
 }
