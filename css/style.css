@@ -4548,7 +4548,7 @@ div.tagsinput span.tag {
 .gauge-title {
     color:#ccc;
     font-size:14px;
-    padding-right:20px;
+    padding-right:0px;
 }
 .gauge-meta {
     margin:0px;
