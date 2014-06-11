@@ -34,5 +34,42 @@ $( document ).ready(function() {
         });
     });//end displcement
 
+    //Cluster Funding
+    $(function () {
+        $('#clusterchart').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Stacked bar chart'
+            },
+            xAxis: {
+                categories: ['Education', 'Nutrition', 'Shelter', 'Other', 'Health']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Total fruit consumption'
+                }
+            },
+            legend: {
+                reversed: true,
+                enabled:false,
+            },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+                series: [{
+                name: 'Funded',
+                data: [5, 3, 4, 7, 2]
+            }, {
+                name: 'Unfunded',
+                data: [2, 2, 3, 2, 1]
+            }]
+        });
+    });
+    
 
 });
