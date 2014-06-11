@@ -308,6 +308,14 @@ var clusterchart = AmCharts.makeChart("clusterdiv",
         bootbox.alert(some_html);
     });
 
+    $("#f_malnutrition_explain").click(function(){
+        var some_html = '<span class="crisis_population_displacement bootbox_icon"></span>';
+        some_html += '<h2>Severe Acute malnutrition</h2><br />';
+        some_html += '<h4>This data represents the country worst affected by malnutrition</h4>';
+        some_html += '<h4>The data is representative of children under the age of 5</h4>';
+        bootbox.alert(some_html);
+    });
+
 
 
 });
