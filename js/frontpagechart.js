@@ -217,5 +217,26 @@ $('#nutritionsparkline').sparkline(nutritionvalues, {
     });
 
 
+    var recoverydata = [{
+        value: 30,
+        color: "#F7464A"
+    }, {
+        value: 50,
+        color: "#E2EAE9"
+    }
+
+    ]
+
+    var recoveryoptions = {
+        animation: false,
+        percentageInnerCutout : 60,
+    };
+
+    //Get the context of the canvas element we want to select
+    var c = $('#recoveryFundingChart');
+    var ct = c.get(0).getContext('2d');
+    var ctx = document.getElementById("recoveryFundingChart").getContext("2d");
+    /*************************************************************************/
+    recoveryFundingChart = new Chart(ct).Doughnut(recoverydata, recoveryoptions);
 
 });
