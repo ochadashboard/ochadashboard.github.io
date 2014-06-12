@@ -5116,14 +5116,12 @@ display: none;
     color:#fff;
 }
 .mini-stat-info {
-    font-size:12px;
+    font-size:18px;
     padding-top:2px;
-    float: right;
-    width: 68%;
 }
 .mini-stat-info span {
     display:block;
-    font-size:17px;
+    font-size:30px;
     font-weight:600;
 }
 .orange {
@@ -5820,4 +5818,12 @@ span.percent {
 margin-left: 5px;
 position: relative;
 top: 35px;
+}
+.col-md-4 {
+width: 33.33333333333333%;
+margin-bottom: 5px;
+}
+.cluster_summary{}
+.cluster_summary .panel-body{
+    min-height: 300px;
 }
