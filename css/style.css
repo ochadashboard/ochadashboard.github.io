@@ -5827,3 +5827,6 @@ margin-bottom: 5px;
 .cluster_summary .panel-body{
     min-height: 400px;
 }
+.margin-right {
+border-right: 1px solid;
+}
