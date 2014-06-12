@@ -216,7 +216,7 @@ $('#nutritionsparkline').sparkline(nutritionvalues, {
         bootbox.alert(some_html);
     });
 
-
+    //early recovery
     var recoverydata = [{
         value: 30,
         color: "#40ca39"
@@ -238,5 +238,25 @@ $('#nutritionsparkline').sparkline(nutritionvalues, {
     var ctx = document.getElementById("recoveryFundingChart").getContext("2d");
     /*************************************************************************/
     recoveryFundingChart = new Chart(ct).Doughnut(recoverydata, recoveryoptions);
+
+    //Wash donut
+    var washdata = [{
+        value: 66.6,
+        color: "#40ca39"
+    }, {
+        value: 60.4,
+        color: "#8fe48a"
+    }
+
+    ]
+    var washoptions = {
+        animation: false,
+        percentageInnerCutout : 60,
+    };
+    var washc = $('#washFundingChart');
+    var washct = washc.get(0).getContext('2d');
+    var washctx = document.getElementById("washFundingChart").getContext("2d");
+    /*************************************************************************/
+    washFundingChart = new Chart(washct).Doughnut(washdata, washoptions);
 
 });
