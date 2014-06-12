@@ -219,10 +219,10 @@ $('#nutritionsparkline').sparkline(nutritionvalues, {
 
     var recoverydata = [{
         value: 30,
-        color: "#F7464A"
+        color: "#40ca39"
     }, {
         value: 50,
-        color: "#E2EAE9"
+        color: "#8fe48a"
     }
 
     ]

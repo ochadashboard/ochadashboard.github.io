@@ -5830,3 +5830,8 @@ margin-bottom: 5px;
 .margin-right {
 border-right: 1px solid;
 }
+.cluster_funding_group{
+    margin-top: 10px;
+}
+.unfunded{background: #8fe48a}
+.funded{background: #40ca39;}
