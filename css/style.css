@@ -5816,3 +5816,8 @@ color: purple;
 font-weight: bold;
 font-size: 4em;
 }
+span.percent {
+margin-left: 5px;
+position: relative;
+top: 35px;
+}
