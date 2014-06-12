@@ -170,8 +170,8 @@
                     $(this.el).find('.percent').text(Math.round(percent));
                 },
                 barColor: "#f8a20f",
-                lineWidth: 5,
-                size:80,
+                lineWidth: 10,
+                size:180,
                 trackColor: "#efefef",
                 scaleColor:"#cccccc"
 
