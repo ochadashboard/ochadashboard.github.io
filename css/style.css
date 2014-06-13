@@ -5835,3 +5835,6 @@ border-right: 1px solid;
 }
 .unfunded{background: #8fe48a}
 .funded{background: #40ca39;}
+div.region-stats {
+min-height: 286px;
+}
