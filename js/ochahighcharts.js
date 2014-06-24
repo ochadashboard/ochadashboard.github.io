@@ -70,6 +70,7 @@ $( document ).ready(function() {
             }]
         });
     });
-    
 
+    //Test Kenya Map
+    
 });

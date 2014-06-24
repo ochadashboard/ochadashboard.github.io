@@ -4805,8 +4805,9 @@ display: none;
 .stat-divider {
     border-right:#dadada 1px dashed;
 }
-.vector-stat {
+#worldmap {
     height:150px;
+    width: 200px;
     margin-top:20px;
 }
 .alert-icon {
