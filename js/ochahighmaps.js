@@ -13,9 +13,7 @@ $(document).ready(function(){
             },
 
             series : [{
-                mapData: Highcharts.geojson(geojson, 'map'),
-                name: 'Random data',
-                
+                mapData: Highcharts.geojson(geojson, 'map'),           
                 
             }]
         });
