@@ -5839,3 +5839,11 @@ border-right: 1px solid;
 div.region-stats {
 min-height: 286px;
 }
+
+/*FUNDING PAGE*/
+.funding_summary_block{
+    background: white;
+    min-height: 150px;
+    border-right: 3px solid #F1F2F7;
+}
+.final_block{border-right: none;}
