@@ -5843,7 +5843,7 @@ min-height: 286px;
 /*FUNDING PAGE*/
 .funding_summary_block{
     background: white;
-min-height: 150px;
+min-height: 120px;
 border: 10px solid #F3f3f3;
 }
 .funding_summary_block .icon{
