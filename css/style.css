@@ -5846,4 +5846,7 @@ min-height: 286px;
     min-height: 150px;
     border-right: 3px solid #F1F2F7;
 }
+.funding_summary_block .icon{
+    font-size: 56px;
+}
 .final_block{border-right: none;}
