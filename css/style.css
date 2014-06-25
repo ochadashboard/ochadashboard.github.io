@@ -10,7 +10,7 @@ html {
 }
 body {
     color:#767676;
-    background:#f1f2f7;
+    background:#f3f3f3;
     font-family:'Open Sans',sans-serif;
     padding:0px !important;
     margin:0px !important;
@@ -5843,8 +5843,8 @@ min-height: 286px;
 /*FUNDING PAGE*/
 .funding_summary_block{
     background: white;
-    min-height: 150px;
-    border-right: 3px solid #F1F2F7;
+min-height: 150px;
+border: 10px solid #F3f3f3;
 }
 .funding_summary_block .icon{
     font-size: 56px;
