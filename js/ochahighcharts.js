@@ -71,6 +71,46 @@ $( document ).ready(function() {
         });
     });
 
-    //Test Kenya Map
+    //Replacement Donut
+    $(function () {
+        $('#sm-pie').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: 1,//null,
+                plotShadow: false
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.y}</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    innerSize: '60%',
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        format: '<b>{point.name}</b>: {point.y}',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Conflict Reports',
+                data: [
+                    ['Kenya',45],
+                    ['Uganda',26],
+                    ['Ethiopia',18],
+                    ['South Sudan',60],
+                    ['Others',7]
+                ]
+            }]
+        });
+    });
     
 });

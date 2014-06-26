@@ -120,64 +120,7 @@ $('#nutritionsparkline').sparkline(nutritionvalues, {
           labels: ['Refugees']
         });*/
 
-    //Morris Donut
-    Morris.Donut({
-    element: 'sm-pie',
-      data: [
-        {
-          label: "Kenya", 
-          value: 12,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Uganda", 
-          value: 30,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Burundi", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Rwanda", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Eritrea", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Ethiopia", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Somalia", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Sudan", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "South Sudan", 
-          value: 20,
-          formatted: 'at least 70%'
-        },
-        {
-          label: "Djibouti", 
-          value: 20,
-          formatted: 'at least 70%'
-        }
-      ],
-      colors: ['#0a7672','#1Fb5af','#338885','#53DAD5','#77dad6','#315FC0','#10337D','#405a90','#43a43e','#138e0c'],
-      formatter: function (x, data) { return data.formatted; }
-    });
+    
 
     ///Bootbox popup
     $("#f_security_explain").click(function(){
