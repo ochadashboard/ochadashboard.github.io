@@ -49,7 +49,7 @@ $( document ).ready(function() {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Total fruit consumption'
+                    text: 'Total Cluster Funding'
                 }
             },
             legend: {
