@@ -5839,6 +5839,10 @@ border-right: 1px solid;
 div.region-stats {
 min-height: 286px;
 }
+.vector-stat {
+    height:150px;
+    margin-top:20px;
+}
 
 /*FUNDING PAGE*/
 .funding_summary_block{
