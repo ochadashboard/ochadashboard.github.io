@@ -76,11 +76,13 @@ $( document ).ready(function() {
         $('#sm-pie').highcharts({
             chart: {
                 plotBackgroundColor: null,
-                plotBorderWidth: 1,//null,
                 plotShadow: false
             },
             title: {
                 text: null
+            },
+            credits: {
+                enabled: false,
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.y}</b>'
