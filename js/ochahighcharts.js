@@ -41,7 +41,7 @@ $( document ).ready(function() {
                 type: 'bar'
             },
             title: {
-                text: 'Stacked bar chart'
+                text: 'Cluster funding'
             },
             xAxis: {
                 categories: ['Education', 'Nutrition', 'Shelter', 'Other', 'Health']
