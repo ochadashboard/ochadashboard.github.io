@@ -5854,3 +5854,7 @@ border: 10px solid #F3f3f3;
     font-size: 56px;
 }
 .final_block{border-right: none;}
+.funding_introduction{
+    background: #ffffff;
+    padding: 10px;
+}
