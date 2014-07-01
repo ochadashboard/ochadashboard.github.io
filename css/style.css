@@ -5866,6 +5866,8 @@ min-height: 286px;
 }
 .funding-stat{
     min-height: 90px;
+    border: 3px solid #F3F3F3;
+    height: 160px;
 }
 .highfund{
     height: 80px;

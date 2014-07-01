@@ -6,10 +6,10 @@ $(document).ready(function(){
 	        });
 	 });
 
-	//Kenya Funding Chart
+	//Djibouti Funding Chart
 	$(function () {
 		var hovertext = 'Million';
-        $('#kenyafundingsummary').highcharts({
+        $('#djiboutifundingsummary').highcharts({
             chart: {
                 type: 'bar'
             },
@@ -55,7 +55,6 @@ $(document).ready(function(){
             	}
             },
             legend: {
-                reversed: true,
                 enabled:false
             },
             
@@ -65,11 +64,11 @@ $(document).ready(function(){
                 }
             },
                 series: [{
-                name: 'Funded',
-                data: [5,]
-            }, {
                 name: 'Unfunded',
-                data: [2,]
+                data: [57.8,]
+            }, {
+                name: 'Funded',
+                data: [16.3,]
             }]
         });
     });
