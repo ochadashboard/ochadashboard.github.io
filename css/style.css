@@ -5847,8 +5847,8 @@ min-height: 286px;
 /*FUNDING PAGE*/
 .funding_summary_block{
     background: white;
-min-height: 120px;
-border: 10px solid #F3f3f3;
+    min-height: 120px;
+    border: 10px solid #F3f3f3;
 }
 .funding_summary_block .icon{
     font-size: 56px;
@@ -5857,4 +5857,13 @@ border: 10px solid #F3f3f3;
 .funding_introduction{
     background: #ffffff;
     padding: 10px;
+}
+.fundingcountry{
+    background: #ffffff;
+    border-top: 2px solid #f3f3f3;
+    padding: 5px;
+    min-height: 300px;
+}
+.funding-stat{
+    min-height: 90px;
 }
