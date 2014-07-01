@@ -5867,3 +5867,9 @@ min-height: 286px;
 .funding-stat{
     min-height: 90px;
 }
+.highfund{
+    height: 80px;
+    min-width:400px;
+    max-width: 540px;
+}
+#kenyafundingsummary{}
