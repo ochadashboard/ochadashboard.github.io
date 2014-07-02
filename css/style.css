@@ -5875,3 +5875,7 @@ min-height: 286px;
     max-width: 540px;
 }
 #kenyafundingsummary{}
+#fundingsummarydonut{
+    height: 300px;
+    width: 300px;
+}
