@@ -198,6 +198,45 @@ $(document).ready(function(){
         });
     });
 
+    //Funding Summary Donut
+    $(function() {
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'fundingsummarydonut',
+                type: 'pie'
+            },
+            title:{text:null},
+            credits:{enabled:false},
+            
+            plotOptions: {
+                pie: {
+                    innerSize: '60%',
+                    dataLabels:{enabled:false,},
+                },
+                
+            },
+            series: [{
+                data: [
+                    ['Funded', 44.2],
+                    ['Unfunded', 26.6],
+                    ]}]
+        },
+                                         
+        function(chart) { // on complete
+            var textX = chart.plotLeft + (chart.plotWidth  * 0.5);
+            var textY = chart.plotTop  + (chart.plotHeight * 0.5);
+
+            var span = '<span id="pieChartInfoText" style="position:absolute; text-align:center;">';
+            span += '<span style="font-size: 32px">17.2</span><br>';
+            span += '<span style="font-size: 16px">Billion</span>';
+            span += '</span>';
+
+            $("#addText").append(span);
+            span = $('#pieChartInfoText');
+            span.css('left', textX + (span.width() * -0.5));
+            span.css('top', textY + (span.height() * -0.5));
+        });
+    });
 
 
 });
