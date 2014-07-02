@@ -5879,3 +5879,16 @@ min-height: 286px;
     height: 300px;
     width: 300px;
 }
+.fundingleft{
+    border-right: 2px solid #f3f3f3;
+}
+#mapcontainer {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;

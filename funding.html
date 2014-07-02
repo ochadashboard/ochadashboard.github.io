@@ -161,7 +161,7 @@
                         </a>
                     </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in">
+                <div id="collapseOne" class="panel-collapse collapse">
                     <div class="panel-body">
                         <div class="col-md-6 funding-stat">
                             <div><h3>Djibouti 2014</h3></div>
@@ -226,17 +226,43 @@
                 </div>
                 <div class="col-md-12">
                     <div id="kenya"  class="fundingcountry row" style="display:none">
-                        Kenya
-                        <select id="kenyafundyear">
-                            Year Selector
-                            <option value="kenya2012">2012</option>
-                            <option value="kenya2013">2013</option>
-                            <option value="kenya2014">2014</option>
-                        </select>
-                        <div>Current Year Summary</div>
-                        <div>Funded/Unfunded</div>
-                        <div>Funding History</div>
-                        <div>Country Clusters</div>                       
+                        <div class='col-md-7 fundingleft'>
+                                Kenya
+                            <select id="kenyafundyear">
+                                Year Selector
+                                <option value="kenya2012">2012</option>
+                                <option value="kenya2013">2013</option>
+                                <option value="kenya2014">2014</option>
+                            </select>
+                                                                                  
+                            <section class="panel">
+                                <header class="panel-heading tab-bg-dark-navy-blue ">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#home">Funding History</a>
+                                        </li>
+                                        <li class="">
+                                            <a data-toggle="tab" href="#about">Clusters</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </header>
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <div id="home" class="tab-pane active">
+                                            Funding History
+                                        </div>
+                                        <div id="about" class="tab-pane">Clusters</div>
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <h3>Current Year Summary</h3>
+                            <div>Funded/Unfunded</div>
+                        </div>                       
                     </div>
                     <div id="uganda" class="fundingcountry row" style="display:none">
                         Uganda
@@ -277,6 +303,7 @@
             
         </div>
         <!-- end country switcher -->
+        <div id="mapcontainer"></div>
     </section>
 </section>
 <!--main content end-->
@@ -307,6 +334,9 @@
 <script src="js/amcharts/amcharts.js"></script>
 <script src="js/amcharts/serial.js"></script>
 <script src="js/highcharts/highcharts.js"></script>
+<script src="http://code.highcharts.com/mapdata/custom/africa.js"></script>
+<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+
 <script src="js/bootbox/bootbox.js"></script>
 <script src="js/jquery.customSelect.min.js" ></script>
 <script src="js/funding/funding.js"></script>
