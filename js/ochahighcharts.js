@@ -87,6 +87,8 @@ $( document ).ready(function() {
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.y}</b>'
             },
+            colors: ['#7db0e9','#5295e0','#2f7ed8', '#0e6adf', '#084d9a','#1aadce', 
+   '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a'],
             plotOptions: {
                 pie: {
                     allowPointSelect: true,
@@ -105,11 +107,13 @@ $( document ).ready(function() {
                 type: 'pie',
                 name: 'Conflict Reports',
                 data: [
-                    ['Kenya',45],
-                    ['Uganda',26],
+                    ['Others',7],
                     ['Ethiopia',18],
+                    ['Uganda',26],
+                    ['Kenya',45],              
+                    
                     ['South Sudan',60],
-                    ['Others',7]
+                    
                 ]
             }]
         });
