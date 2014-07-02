@@ -238,5 +238,57 @@ $(document).ready(function(){
         });
     });
 
+    //Funding History
+    $(function () {
+        $('#fundinghistorycontainer').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Funding Request History'
+            },
+            credits:{enabled:false},
+            legend:{enabled:false},
+            
+            xAxis: {
+                categories: [
+                    '2008',
+                    '2009',
+                    '2010',
+                    '2011',
+                    '2012',
+                    '2013',
+                    '2014',
+                    
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Amount(millions $)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>${point.y:.1f}Million</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Amount',
+                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6,]
+    
+            },]
+        });
+    });
+
 
 });
