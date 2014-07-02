@@ -115,6 +115,15 @@ $(document).ready(function(){
                 reversed: true,
                 enabled:false
             },
+            tooltip: {
+                formatter: function() {
+                var tooltip;
+                
+                 tooltip =  '<span style="color:' + this.series.color + '">' + this.series.name + '</span>: $<b>' + this.y + '</b> Million<br/>';
+               
+                return tooltip;
+                }
+            },
             
             plotOptions: {
                 series: {
@@ -122,11 +131,11 @@ $(document).ready(function(){
                 }
             },
                 series: [{
-                name: 'Funded',
-                data: [5,]
-            }, {
                 name: 'Unfunded',
-                data: [2,]
+                data: [697,]
+            }, {
+                name: 'Funded',
+                data: [236,]
             }]
         });
     });
