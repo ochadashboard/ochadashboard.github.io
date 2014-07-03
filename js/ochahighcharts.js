@@ -101,6 +101,74 @@ $( document ).ready(function() {
         });
     });
 
+    //WashFunding
+    //Start Nutrition Cluster Funding Chart
+    $(function () {
+        var hovertext = 'Million';
+        $('#washfundingsummary').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: null
+            },
+            xAxis: {
+                labels:{
+                  enabled: false
+                },
+                 lineWidth: 0,
+                minorGridLineWidth: 0,
+                lineColor: 'transparent',
+                minorTickLength: 0,
+                tickLength: 0
+             
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: null
+                },
+                labels:{
+                  enabled: false
+                },
+                lineWidth: 0,
+                minorGridLineWidth: 0,
+                lineColor: 'transparent',
+                minorTickLength: 0,
+                tickLength: 0,
+                gridLineWidth: 0
+            },
+            credits: {
+            enabled:false
+            },
+            tooltip: {
+                formatter: function() {
+                var tooltip;
+                
+                 tooltip =  '<span style="color:' + this.series.color + '">' + this.series.name + '</span>: $<b>' + this.y + '</b> Million<br/>';
+               
+                return tooltip;
+                }
+            },
+            legend: {
+                enabled:false
+            },
+            
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+                series: [{
+                name: 'Unfunded',
+                data: [57.8,]
+            }, {
+                name: 'Funded',
+                data: [16.3,]
+            }]
+        });
+    });
+
     //Cluster Funding
     $(function () {
         $('#clusterchart').highcharts({
