@@ -130,10 +130,10 @@ $('#nutritionsparkline').sparkline(nutritionvalues, {
         bootbox.alert(some_html);
     });
     $("#f_nutritionpie_explain").click(function(){
-        var some_html = '<span class="icon-cluster_nutrition bootbox_icon"></span>';
-        some_html += '<h2>Nutrition Data</h2><br />';
-        some_html += '<h4>This data is obtained from UNICEF and other partners</h4>';
-        some_html += '<h4>The pie chart represents acute malnutrition percentages per country</h4>';
+        var some_html = '';
+        some_html += '<h2>Conflict Report Data</h2><br />';
+        some_html += '<h4>This data is obtained from CEWARN and other partners</h4>';
+        some_html += '<h4></h4>';
         bootbox.alert(some_html);
     });
     $("#f_fundingchart_explain").click(function(){
