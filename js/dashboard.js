@@ -160,7 +160,7 @@
         }
 
         //Jquery vector map
-        if ($.fn.vectorMap) {
+      /*  if ($.fn.vectorMap) {
             var cityAreaData = [
                 500.70,
                 410.16,
@@ -237,7 +237,7 @@
                     }]
                 }
             });
-        }
+        }*/
 
         /*==Easy Pie chart ==*/
         if ($.fn.easyPieChart) {

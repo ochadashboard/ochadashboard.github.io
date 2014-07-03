@@ -1,45 +1,75 @@
 $(document).ready(function(){
-   var controvmap = $(function () {
+    //Map
+    $(function () {
 
-    $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=world-population-density.json&callback=?', function (data) {
-        
+        // Prepare demo data
+        var data = [{
+            'hc-key': 'ke',
+            value: 3
+        }, {
+            'hc-key': 'ug',
+            value: 5
+        }, {
+            'hc-key': 'sd',
+            value: 5
+        },
+                     {
+            'hc-key': 'et',
+            value: 5
+        }, {
+            'hc-key': 'er',
+            value: 5
+        },{
+            'hc-key': 'dj',
+            value: 5
+        }                , {
+            'hc-key': 'ss',
+            value: 5
+        }, {
+            'hc-key': 'bi',
+            value: 5
+        },
+        {
+            'hc-key': 'rw',
+            value: 20
+        }];
+
+
         // Initiate the chart
-        $('#worldmap').highcharts('Map', {
+        $('#world-map').highcharts('Map', {
 
-            title : {
-                text : null
-            },
-            credits: {
-                enabled: false
-            },
-            legend: {
-                enabled: false
+            title: {
+                text: null
             },
             
 
-            colorAxis: {
-                min: 1,
-                max: 1000,
-                type: 'logarithmic'
+            mapNavigation: {
+                enabled: false,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
             },
-
-            series : [{
-                data : data,
-                mapData: Highcharts.maps['custom/world'],
-                joinBy: ['iso-a2', 'code'],
-                name: 'Population density',
+            legend:{enabled:false},
+            credits:{enabled:false},
+            series: [{
+                data: data,
+                mapData: Highcharts.maps['custom/africa'],
+                joinBy: 'hc-key',
+                colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c', '#8085e9', 
+       '#f15c80', '#e4d354', '#8085e8', '#8d4653', '#91e8e1'],
+                allAreas: false,
+                name: 'Random data',
                 states: {
                     hover: {
                         color: '#BADA55'
                     }
                 },
-                tooltip: {
-                    valueSuffix: '/km²'
+                dataLabels: {
+                    enabled: false,
+                    format: '{point.name}'
                 }
             }]
         });
     });
-
-});
 });
     
