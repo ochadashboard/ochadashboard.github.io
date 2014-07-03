@@ -118,5 +118,62 @@ $( document ).ready(function() {
             }]
         });
     });
+
+    //Graph stacked funding
+    $(function () {
+        $('#fundingcontainer').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: null
+            },
+            xAxis: {
+                categories: ['KE', 'UG', 'SSD', 'SD', 'SOM']
+            },
+            credits:{enabled:false},
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Funding in Millions'
+                },
+                stackLabels: {
+                    enabled: false,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            legend: {
+                enabled:false
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': $'+ this.y +'<br/>Million';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: false,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Funded',
+                data: [5, 3, 4, 7, 2]
+            }, {
+                name: 'Unfunded',
+                data: [2, 2, 3, 2, 1]
+            }]
+        });
+    });
     
 });

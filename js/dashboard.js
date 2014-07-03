@@ -439,51 +439,7 @@
                     });
                 }
             });
-        });
-
-        /* Morris charts */
-        Morris.Bar({
-            element: 'fundingcontainer',
-            data: [{
-                country: 'Kenya',
-                a: 100,
-                b: 90
-            }, {
-                country: 'Uganda',
-                a: 75,
-                b: 65
-            }, {
-                country: 'Somalia',
-                a: 50,
-                b: 40
-            }, {
-                country: 'Sudan',
-                a: 75,
-                b: 65
-            }, {
-                country: 'Burundu',
-                a: 50,
-                b: 40
-            }, {
-                country: 'Ethiopia',
-                a: 75,
-                b: 65
-            }, {
-                country: 'South Sudan',
-                a: 100,
-                b: 90
-            }],
-            hoverCallback: function(index, options, content) {
-              return(content);
-            },
-            hideHover: 'auto',
-            xkey: 'country',
-            ykeys: ['a', 'b'],
-            stacked: true,
-            labels: ['Unfunded', 'Funded']
-        }); 
-
-        
+        });     
 
 
 
