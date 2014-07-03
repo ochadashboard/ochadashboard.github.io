@@ -161,10 +161,10 @@ $( document ).ready(function() {
             },
                 series: [{
                 name: 'Unfunded',
-                data: [57.8,]
+                data: [6.8,]
             }, {
                 name: 'Funded',
-                data: [16.3,]
+                data: [7.3,]
             }]
         });
     });
