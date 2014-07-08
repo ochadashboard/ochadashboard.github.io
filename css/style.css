@@ -5096,17 +5096,17 @@ display: none;
     -moz-border-radius:3px;
     border-radius:3px;
     margin-bottom:20px;
-    min-height: 160px;
-    max-height: 200px;
+    height: 95px;
+    
     overflow: hidden;
 }
 .mini-stat-icon {
-    width:60px;
-    height:60px;
+    width:48px;
+    height:48px;
     display:inline-block;
-    line-height:60px;
+    line-height:50px;
     text-align:center;
-    font-size:30px;
+    font-size:25px;
     background:#eee;
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
