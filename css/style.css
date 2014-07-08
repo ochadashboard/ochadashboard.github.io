@@ -5096,7 +5096,7 @@ display: none;
     -moz-border-radius:3px;
     border-radius:3px;
     margin-bottom:20px;
-    height: 95px;
+    height: 60px;
     
     overflow: hidden;
 }
@@ -5112,8 +5112,8 @@ display: none;
     -moz-border-radius:100%;
     border-radius:100%;
     float:left;
-    margin-right:10px;
-    margin-top: 30px;
+    margin-right:5px;
+    margin-top: 5px;
     color:#fff;
 }
 .mini-stat-info {
@@ -5122,7 +5122,7 @@ display: none;
 }
 .mini-stat-info span {
     display:block;
-    font-size:20px;
+    font-size:15px;
     font-weight:600;
 }
 .orange {
@@ -5900,4 +5900,5 @@ min-height: 286px;
     height: 90px;
     max-width: 500px;
     min-width: 200px;
+    display: none;
 }
