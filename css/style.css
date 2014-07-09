@@ -5737,7 +5737,7 @@ right: -1px;
 .ocha-introduction{clear: both;margin-bottom: 10px;}
 span.in-need {
     color: rgb(124, 181, 236);
-    border-bottom: 1px solid rgb(124, 181, 236);
+    /*border-bottom: 1px solid rgb(124, 181, 236);*/
 }
 span.in-target{}
 span.in-target p{font-size: 0.7em;margin-bottom: 0;}
