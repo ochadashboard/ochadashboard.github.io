@@ -5838,12 +5838,13 @@ border-right: 1px solid;
 .unfunded{background: #8fe48a}
 .funded{background: #40ca39;}
 div.region-stats {
-min-height: 286px;
+min-height: 310px;
 }
 .vector-stat {
     height:260px;
     width: 360px;
-    margin-top:20px;
+    margin-top:0px;
+    overflow: hidden;
 }
 
 /*FUNDING PAGE*/
@@ -5888,6 +5889,10 @@ min-height: 286px;
     height: 500px; 
     min-width: 310px;
     margin: 0 auto; 
+}
+.leaflet-container {
+background: #fff;
+outline: 0;
 }
 .loading {
     margin-top: 10em;

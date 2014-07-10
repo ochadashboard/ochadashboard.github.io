@@ -19,16 +19,20 @@ $(document).ready(function(){
         color: "white",
         opacity: 1,
         fillColor: "blue",
-        fillOpacity: 1,
-        weight: 2
+        fillOpacity: 0.7,
+        weight: 1,
+        dashArray: '1',
+        stroke:true
+        
     }
   }
 };
 
 // create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('mapcontainer', {
+var map = L.map('frontmapcontainer', {
   center: new L.LatLng(3,36),
-  zoom: 5
+  zoom: 4,
+  
 });
 new L.GeoJSON(mp, {
   style: function(feature) {
