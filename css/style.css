@@ -5886,8 +5886,7 @@ min-height: 286px;
 }
 #mapcontainer {
     height: 500px; 
-    min-width: 310px; 
-    max-width: 800px; 
+    min-width: 310px;
     margin: 0 auto; 
 }
 .loading {
