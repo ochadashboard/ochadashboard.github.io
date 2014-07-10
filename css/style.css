@@ -5841,7 +5841,7 @@ div.region-stats {
 min-height: 310px;
 }
 .vector-stat {
-    height:260px;
+    height:350px;
     width: 360px;
     margin-top:0px;
     overflow: hidden;
@@ -5887,7 +5887,7 @@ min-height: 310px;
 }
 #mapcontainer {
     height: 500px; 
-    min-width: 310px;
+    min-width: 450px;
     margin: 0 auto; 
 }
 .leaflet-container {

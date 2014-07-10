@@ -36,7 +36,7 @@ function getColor(d) {
 
 // create a map in the "map" div, set the view to a given place and zoom
 var map = L.map('frontmapcontainer', {
-  center: new L.LatLng(3,36),
+  center: new L.LatLng(10,34),
   zoom: 4,
   
 });
