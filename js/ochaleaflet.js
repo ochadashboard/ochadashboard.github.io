@@ -16,13 +16,8 @@ $(document).ready(function(){
   "properties": {
     "name": "MultiPolygon",
     "style": {
-        color: "white",
-        opacity: 1,
-        fillColor: "blue",
-        fillOpacity: 0.7,
-        weight: 1,
-        dashArray: '1',
-        stroke:true
+        "color": "white",
+        "stroke-width": "1"
         
     }
   }
@@ -36,9 +31,12 @@ var map = L.map('frontmapcontainer', {
 });
 new L.GeoJSON(mp, {
   style: function(feature) {
-      return feature.properties.style
+      return{
+      	weight:1,
+      	
+      }
   },
 }).addTo(map);
 
-var openstreetmap = openStreetMap  = new L.TileLayer.OpenStreetMap().addTo(map);
+//var openstreetmap = new L.TileLayer.OpenStreetMap().addTo(map);
 });

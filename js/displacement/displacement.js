@@ -18,9 +18,9 @@ $(document).ready(function(){
     "style": {
         color: "white",
         opacity: 1,
-        fillColor: "blue",
+        fillColor: "white",
         fillOpacity: 1,
-        weight: 2
+        weight: 0.5
     }
   }
 };
@@ -32,7 +32,10 @@ var map = L.map('mapcontainer', {
 });
 new L.GeoJSON(mp, {
   style: function(feature) {
-      return feature.properties.style
+      return{
+      	fillColor:"white",
+      	weight:1,
+      }
   },
 }).addTo(map);
 
